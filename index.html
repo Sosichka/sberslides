@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<title>Shower Presentation Engine</title>
 	<meta charset="utf-8">
@@ -9,34 +9,24 @@
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Здесь какое-то название</h1>
+		<p>Подзаголовок</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
+
+		<img src="pictures/efs.jpg" class="efs_logo" alt="Единая фронтальная система">
+		<h2>Единая фронтальная система (ЕФС)</h2>
+		<style type="text/css">
+			#cover .efs_logo {
+				width: 25%;
+				margin: 0 auto 2.5rem;
+				display: block;
+			}
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
+				text-align: center;
+				font-size: 5rem;
+				line-height: 1.2;
+			}
 		</style>
 	</section>
 	<section class="slide">
@@ -171,9 +161,6 @@
 				}
 		</style>
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
