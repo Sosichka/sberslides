@@ -6,6 +6,40 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<style type="text/css">
+		.nowrap {
+			white-space: nowrap;
+		}
+		.items {
+			font-size: 2rem;
+		}
+		.items li {
+			margin-bottom: 2rem;
+			line-height: 1.6;
+		}
+		.important-number {
+			color: #c00
+		}
+		.arrow {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.framework_screen {
+			width: 65%;
+		}
+		.widescreen {
+			width: 100%;
+		}
+		.centered-picture {
+			display: block;
+			margin: 0 auto;
+		}
+		.vertical-centered {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
 </head>
 <body class="shower list">
 	<header class="caption">
@@ -13,7 +47,6 @@
 		<p>Подзаголовок</p>
 	</header>
 	<section class="slide" id="cover">
-
 		<img src="pictures/efs.jpg" class="efs_logo" alt="Единая фронтальная система">
 		<h2>Единая фронтальная система (ЕФС)</h2>
 		<style type="text/css">
@@ -29,21 +62,206 @@
 			}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+	<section class="slide" id="front">
+		<h2>Фронтальные системы</h2>
+		<ol class="items">
+			<li>Интернет банк&nbsp;&mdash; Сбербанк Онлайн</li>
+			<li class="next">Банкоматы и терминалы</li>
+			<li class="next">Интерфейсы оператора в отделениях и <span class="nowrap">call-центрах</span></li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
 	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+	<section class="slide" id="purpose">
+		<h2>Задачи разработки ЕФС</h2>
+		<ul class="items">
+			<li>Надежность</li>
+			<li class="next">Безопасность</li>
+			<li class="next">Отказоустойчивость&nbsp;&mdash; доступность <mark class="important-number">99.99%</mark> времени,<br> время отказа&nbsp;&mdash; <mark class="important-number">52&nbsp;минуты</mark> в&nbsp;год</li>
+		</ul>
+	</section>
+	<section class="slide" id="purpose2">
+		<h2>Задачи разработки ЕФС</h2>
+		<ul class="items">
+			<li>Удобство для разных пользователей</li>
+			<li class="next">Быстрота работы и внедрения (time-to-market)</li>
+		</ul>
+	</section>
+	<section class="slide" id="purpose3">
+		<h2>Снижение времени внедрения продукта</h2>
+		<div class="time-to-market">1 год
+			<span class="arrow">&rarr;</span>
+			<mark class="important-number">1 месяц</mark>
+		</div>
+		<style type="text/css">
+			.time-to-market {
+				font-size: 5rem;
+				text-align: center;
+				margin-top: 9rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="about">
+		<h2>Платформа ЕФС</h2>
+		<div class="fact">
+			<img class="icon icon-hourglass" src="pictures/about_counter.svg" alt="" />
+			<span class="important-number">1</span> год</div>
+		<div class="fact next">
+			<img class="icon" src="pictures/about_head.svg" alt="" />
+			<span class="important-number">~800</span> человек
+		</div>
+		<div class="fact next">
+			<img class="icon" src="pictures/about_lauch.svg" alt="" />
+			<span class="important-number">2018</span> год&nbsp;&mdash; в проме
+		</div>
+		<style type="text/css">
+			#about .icon {
+				vertical-align: middle;
+				margin-right: 1rem;
+				opacity: 0.7;
+			}
+			#about .fact {
+				margin-bottom: 2rem;
+				font-size: 3rem;
+			}
+			#about .icon-hourglass {
+				margin-left: 1rem;
+				margin-right: 2.2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="frontend">
+		<h2>Фронтенд ЕФС</h2>
+		<div class="info"><span class="important-number">~500</span> человек</div>
+		<div class="double next">
+			<div class="column">
+				<img class="icon" src="pictures/frontend_ui_team.svg" alt="" />
+				<h3 class="important-number">Команда платформы</h3>
+				<div>библиотека ui-компонентов</div>
+			</div>
+			<div class="column">
+				<img class="icon applied" src="pictures/frontend_applied.svg" alt="" />
+				<h3 class="important-number">Прикладные проекты</h3>
+				<div>бизнес-логика</div>
+			</div>
+			<div class="next">
+				<img class="arrow" src="pictures/frontend_arrow.svg" alt="">
+			</div>
+			<div class="next">
+				<img class="check" src="pictures/frontend_check.svg" alt="">
+			</div>
+		</div>
+		<style type="text/css">
+			#frontend .icon {
+				width: 40%;
+			}
+			#frontend .double {
+				position: relative;
+			}
+			#frontend .column {
+				text-align: center;
+			}
+			#frontend .info {
+				text-align: center;
+				font-size: 2.5rem;
+				margin-bottom: 2rem;
+			}
+			#frontend h3 {
+				font-size: 2rem;
+			}
+			#frontend .applied {
+				margin-top: 3.15rem;
+			}
+			#frontend .arrow {
+				position: absolute;
+				left: 50%;
+				margin-left: -2rem;
+				top: 50%;
+				margin-top: -2rem;
+			}
+			#frontend .check {
+				position: absolute;
+				left: 1.5rem;
+				top: 0;
+			}
+		</style>
+	</section>
+	<section class="slide" id="framework">
+		<h2 class="vertical-centered">Библиотека<br> <span class="nowrap">ui-компонентов</span></h2>
+		<img src="pictures/framework.png" class="cover" alt="Единая фронтальная система">
+		<style type="text/css">
+			#framework .cover {
+				opacity: 0.2;
+			}
+			#framework h2 {
+				font-size: 5rem;
+				color: #c00;
+				text-align: center;
+			}
+		</style>
+	</section>
+	<section class="slide" id="include_1">
+		<h2>Контроллы</h2>
+		<img src="pictures/include_controls.svg" class="framework_screen" alt="Контроллы">
+	</section>
+	<section class="slide" id="include_2">
+		<h2>Способы вывода информации</h2>
+		<img src="pictures/include_info.svg" class="widescreen" alt="Способы вывода информации">
+	</section>
+	<section class="slide" id="include_3">
+		<h2>Сетка</h2>
+		<img src="pictures/include_cell.svg" class="framework_screen" alt="Сетка">
+	</section>
+	<section class="slide" id="include_4">
+		<h2>Загрузка фотографий и файлов</h2>
+		<img src="pictures/include_uploads.svg" class="widescreen" alt="Загрузка фотографий и файлов">
+		<style>
+			#include_4 h2 {
+				font-size: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="include_5">
+		<h2>Компонент динамической подгрузки приложений</h2>
+		<img src="pictures/include_lauch.svg" class="framework_screen" alt="Компонент динамической загрузки приложений">
+		<style>
+			#include_5 h2 {
+				font-size: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="versions">
+		<h2>Поддержка браузеров</h2>
+		<div class="info next">IE8 <span class="small">&&</span> IE11</div>
+		<style>
+			#versions .info {
+				text-align: center;
+				font-size: 8rem;
+			}
+			#versions .small {
+				font-size: 5rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="versions_cry">
+		<h2>Поддержка браузеров</h2>
+		<img src="pictures/versions_cry.png" class="cry" alt="CRY">
+		<style>
+			#versions_cry .cry {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 70%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="activex">
+		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
+	</section>
+	<section class="slide" id="team">
+		<ul>
+			<li>8 человек</li>
+			<li>высшее образование</li>
+			<li>высшее образование</li>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>Two columns if you like</h2>
@@ -127,7 +345,7 @@
 		<style>
 			#picture h2 {
 				color:#FFF;
-				}
+			}
 		</style>
 	</section>
 	<section class="slide">
@@ -148,7 +366,7 @@
 	</section>
 	<section class="slide" id="see-more">
 		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
+			<img src="pictures/logo.svg" alt="Shower logo" >
 			<a href="https://github.com/shower/shower">See more on GitHub</a>
 		</h2>
 		<style>
