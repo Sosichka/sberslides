@@ -39,6 +39,9 @@
 			top: 50%;
 			transform: translate(-50%, -50%);
 		}
+		.small-code code {
+			font-size: 1.5rem;
+		}
 	</style>
 </head>
 <body class="shower list">
@@ -213,7 +216,7 @@
 	<section class="slide" id="include_4">
 		<h2>Загрузка фотографий и файлов</h2>
 		<img src="pictures/include_uploads.svg" class="widescreen" alt="Загрузка фотографий и файлов">
-		<style>
+		<style type="text/css">
 			#include_4 h2 {
 				font-size: 2rem;
 			}
@@ -222,7 +225,7 @@
 	<section class="slide" id="include_5">
 		<h2>Компонент динамической подгрузки приложений</h2>
 		<img src="pictures/include_lauch.svg" class="framework_screen" alt="Компонент динамической загрузки приложений">
-		<style>
+		<style type="text/css">
 			#include_5 h2 {
 				font-size: 2rem;
 			}
@@ -231,7 +234,7 @@
 	<section class="slide" id="versions">
 		<h2>Поддержка браузеров</h2>
 		<div class="info next">IE8 <span class="small">&&</span> IE11</div>
-		<style>
+		<style type="text/css">
 			#versions .info {
 				text-align: center;
 				font-size: 8rem;
@@ -244,7 +247,7 @@
 	<section class="slide" id="versions_cry">
 		<h2>Поддержка браузеров</h2>
 		<img src="pictures/versions_cry.png" class="cry" alt="CRY">
-		<style>
+		<style type="text/css">
 			#versions_cry .cry {
 				position: absolute;
 				left: 0;
@@ -256,6 +259,170 @@
 	<section class="slide" id="activex">
 		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
 	</section>
+	<section class="slide" id="technologies">
+		<h2 class="vertical-centered">Технологии</h2>
+		<img src="pictures/activex.jpg" class="cover" alt="Technologies">
+	</section>
+	<section class="slide" id="framework-choice">
+		<img src="pictures/framework_react.png" class="framework_screen centered-picture" alt="React">
+		<style type="text/css">
+			#framework-choice .framework_screen {
+				width: 50%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="react-choice">
+		<h2>React</h2>
+		<ul class="items">
+			<li>Компонентный подход для построения удобного API</li>
+			<li class="next">Читабельность кода, его дальнейшее переиспользование</li>
+			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React.Native</li>
+		</ul>
+	</section>
+	<section class="slide" id="type-choice">
+		<img src="pictures/typescript_choice.png" class="framework_screen centered-picture" alt="Typecript">
+		<style type="text/css">
+			#type-choice .framework_screen {
+				width: 50%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="typescript-choice">
+		<h2>Typescript</h2>
+		<ul class="items">
+			<li>строгая типизация (тип <code>any</code> почти не используем)</li>
+			<li class="next">избегаем &laquo;глупых&raquo; ошибок при разработке</li>
+			<li class="next">читабельность кода</li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems">
+		<h2>Как решали</h2>
+		<ul class="items next">
+			<li>сделали компоненты &laquo;глупыми&raquo;</li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-2">
+		<div class="small-code example">
+			<pre>
+				<code>export interface State {</code>
+				<code>	<mark>value</mark>: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>	onChange() = value => this.setState({ <mark>value</mark> })</code>
+				<code>	render() {</code>
+					<code>		&lt;input value={this.state.<mark>value</mark> }
+			onChange={this.onChange} /&gt;</code>
+				<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+		<div class="small-code example next">
+			<pre>
+				<code>export interface State {</code>
+				<code>	value: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>	<mark>onChange</mark>() = value => this.setState({ value })</code>
+				<code>	render() {</code>
+					<code>		&lt;input value={this.state.value }
+			onChange={this.<mark>onChange</mark>} /&gt;</code>
+				<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-3">
+		<div class="small-code">
+			<pre>
+				<code>export interface FormState {</code>
+				<code>	<mark>value</mark>: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Form</mark> extends React.Component&lt;Props, FormState&gt; {</code>
+						<code>	changeInput = value => this.setState({ <mark>value</mark> })</code>
+
+						<code>	render() {</code>
+						<code>		&lt;Input value={this.state.value}
+			onChange={this.changeInput} /&gt;</code>
+					<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-4">
+		<div class="small-code">
+			<pre>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, {}&gt; {</code>
+					<code>	render() {</code>
+					<code>		&lt;input value={this.props.<mark>value</mark> }
+			onChange={this.props.onChange } /&gt;</code>
+					<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-5">
+		<h2>Проблемы производительности</h2>
+		<ul class="items">
+			<li>добавили <code>shouldComponentUpdate</code></li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-6">
+		<pre>
+			<code>shouldComponentUpdate(nextProps, nextState) {</code>
+			<code>	<span class="comment">// делаем поверхностную проверку свойств</span></code>
+			<code>}</code>
+		</pre>
+		<div class="next">
+			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-7">
+		<h2>Проблемы производительности</h2>
+		<ul class="items">
+			<li>избавились от утечек памяти в колбеках</li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-8">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code> 	render() {</code>
+			<code>		&lt;button&gt; onClick={(e) => console.log(e);}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+	<section class="slide" id="dev-problems-9">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code> 	render() {</code>
+			<code>		&lt;button&gt; onClick={<mark>(e) => console.log(e);</mark>}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+	<section class="slide" id="dev-problems-10">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code>	<mark>onPost</mark> = e => console.log(e);</code>
+			<code>	render() {</code>
+			<code>		&lt;button&gt; onClick={<mark>this.onPost</mark>}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+	<section class="slide" id="dev-problems-11">
+		<h2>Проблемы производительности</h2>
+		<ul class="items">
+			<li>используем <mark class="important-number">Redux</mark> для контроля <code>state</code> приложения</li>
+		</ul>
+	</section>
+
 	<section class="slide" id="team">
 		<ul>
 			<li>8 человек</li>
