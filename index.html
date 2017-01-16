@@ -42,6 +42,12 @@
 		.small-code code {
 			font-size: 1.5rem;
 		}
+		.cover-opacity {
+			opacity: 0.9;
+		}
+		.slide .cover-title {
+			color: #fff
+		}
 	</style>
 </head>
 <body class="shower list">
@@ -142,7 +148,7 @@
 	</section>
 	<section class="slide" id="frontend">
 		<h2>Фронтенд ЕФС</h2>
-		<div class="info"><span class="important-number">~500</span> человек</div>
+		<div class="info"><span class="important-number">~800</span> человек</div>
 		<div class="double next">
 			<div class="column">
 				<img class="icon" src="pictures/frontend_ui_team.svg" alt="" />
@@ -242,7 +248,7 @@
 	</section>
 	<section class="slide" id="versions">
 		<h2>Поддержка браузеров</h2>
-		<div class="info next">IE8 <span class="small">&&</span> IE11</div>
+		<div class="info next">IE8 <span class="small"> или </span> IE11</div>
 		<style type="text/css">
 			#versions .info {
 				text-align: center;
@@ -269,8 +275,8 @@
 		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
 	</section>
 	<section class="slide" id="technologies">
-		<h2 class="vertical-centered">Технологии</h2>
-		<img src="pictures/activex.jpg" class="cover" alt="Technologies">
+		<h2 class="vertical-centered cover-title">Технологии</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
 	</section>
 	<section class="slide" id="framework-choice">
 		<img src="pictures/framework_react.png" class="framework_screen centered-picture" alt="React">
@@ -304,6 +310,10 @@
 			<li class="next">читабельность кода</li>
 		</ul>
 	</section>
+	<section class="slide" id="product-problems">
+		<h2 class="vertical-centered cover-title">Проблемы производительности</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+	</section>
 	<section class="slide" id="dev-problems">
 		<h2>Как решали</h2>
 		<ul class="items next">
@@ -311,7 +321,7 @@
 		</ul>
 	</section>
 	<section class="slide" id="dev-problems-2">
-		<div class="small-code example">
+		<div class="small-code">
 			<pre>
 				<code>export interface State {</code>
 				<code>	<mark>value</mark>: string</code>
@@ -325,7 +335,9 @@
 				<code>}</code>
 			</pre>
 		</div>
-		<div class="small-code example next">
+	</section>
+	<section class="slide" id="dev-problems-3">
+		<div class="small-code">
 			<pre>
 				<code>export interface State {</code>
 				<code>	value: string</code>
@@ -340,7 +352,7 @@
 			</pre>
 		</div>
 	</section>
-	<section class="slide" id="dev-problems-3">
+	<section class="slide" id="dev-problems-4">
 		<div class="small-code">
 			<pre>
 				<code>export interface FormState {</code>
@@ -357,7 +369,7 @@
 			</pre>
 		</div>
 	</section>
-	<section class="slide" id="dev-problems-4">
+	<section class="slide" id="dev-problems-5">
 		<div class="small-code">
 			<pre>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, {}&gt; {</code>
@@ -369,13 +381,13 @@
 			</pre>
 		</div>
 	</section>
-	<section class="slide" id="dev-problems-5">
-		<h2>Проблемы производительности</h2>
+	<section class="slide" id="dev-problems-6">
+		<h2>Как решали</h2>
 		<ul class="items">
 			<li>добавили <code>shouldComponentUpdate</code></li>
 		</ul>
 	</section>
-	<section class="slide" id="dev-problems-6">
+	<section class="slide" id="dev-problems-7">
 		<pre>
 			<code>shouldComponentUpdate(nextProps, nextState) {</code>
 			<code>	<span class="comment">// делаем поверхностную проверку свойств</span></code>
@@ -385,13 +397,13 @@
 			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>
 		</div>
 	</section>
-	<section class="slide" id="dev-problems-7">
-		<h2>Проблемы производительности</h2>
+	<section class="slide" id="dev-problems-8">
+		<h2>Как решали</h2>
 		<ul class="items">
 			<li>избавились от утечек памяти в колбеках</li>
 		</ul>
 	</section>
-	<section class="slide" id="dev-problems-8">
+	<section class="slide" id="dev-problems-9">
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code> 	render() {</code>
@@ -402,7 +414,7 @@
 			<code>}</code>
 		</pre>
 	</section>
-	<section class="slide" id="dev-problems-9">
+	<section class="slide" id="dev-problems-10">
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code> 	render() {</code>
@@ -413,7 +425,7 @@
 			<code>}</code>
 		</pre>
 	</section>
-	<section class="slide" id="dev-problems-10">
+	<section class="slide" id="dev-problems-11">
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code>	<mark>onPost</mark> = e => console.log(e);</code>
@@ -425,10 +437,57 @@
 			<code>}</code>
 		</pre>
 	</section>
-	<section class="slide" id="dev-problems-11">
-		<h2>Проблемы производительности</h2>
+	<section class="slide" id="dev-problems-12">
+		<h2>Как решали</h2>
 		<ul class="items">
 			<li>используем <mark class="important-number">Redux</mark> для контроля <code>state</code> приложения</li>
+		</ul>
+	</section>
+	<section class="slide" id="app">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code>&lt;UFSProvider&gt;</code>
+        		<code>	&lt;Workspace&gt;</code>
+				<code>		&lt;AppContainer&gt;</code>
+		</pre>
+	</section>
+	<section class="slide" id="app2">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code>&lt;UFSProvider&gt; - создает Store на странице</code>
+        		<code class="comment">	&lt;Workspace&gt; </code>
+				<code class="comment">		&lt;AppContainer&gt; </code>
+		</pre>
+	</section>
+	<section class="slide" id="app3">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code class="comment">&lt;UFSProvider&gt;</code>
+        		<code>	&lt;Workspace&gt; - рабочее место приложения</code>
+				<code class="comment">		&lt;AppContainer&gt; </code>
+		</pre>
+	</section>
+	<section class="slide" id="app4">
+		<h2>Рабочее место</h2>
+		<ul class="items">
+			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
+			<li class="next">включает в себя &laquo;обвязку&raquo; приложения</li>
+			<li class="next">содержит в себе <code>&lt;AppContainer&gt;</code></li>
+		</ul>
+	</section>
+	<section class="slide" id="app5">
+		<h2>AppContainer</h2>
+		<ul class="items">
+			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
+			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки компонентов по url</li>
+			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
+		</ul>
+	</section>
+	<section class="slide" id="app6">
+		<h2>AppContainer</h2>
+		<ul class="items">
+			<li>Приложение - js-файл</li>
+			<li class="next">подгрузка нового приложения - метод <code>openApp('file_address')</code></li>
 		</ul>
 	</section>
 	<section class="slide" id="css">
