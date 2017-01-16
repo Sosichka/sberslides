@@ -1,179 +1,521 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<title>Shower Presentation Engine</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<style type="text/css">
+		.nowrap {
+			white-space: nowrap;
+		}
+		.items {
+			font-size: 2rem;
+		}
+		.items li {
+			margin-bottom: 2rem;
+			line-height: 1.6;
+		}
+		.important-number {
+			color: #c00
+		}
+		.arrow {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.framework_screen {
+			width: 65%;
+		}
+		.widescreen {
+			width: 100%;
+		}
+		.centered-picture {
+			display: block;
+			margin: 0 auto;
+		}
+		.vertical-centered {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.small-code code {
+			font-size: 1.5rem;
+		}
+		.cover-opacity {
+			opacity: 0.9;
+		}
+		.slide .cover-title {
+			color: #fff
+		}
+	</style>
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Сбертехнологии фронтенда</h1>
+		<p>Александра Воробьева</p>
 	</header>
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
+	<section class="slide" id="splash">
+		<h2 class="centered-picture vertical-centered cover-title">Сбертехнологии<br> фронтенда</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="">
 		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
+			#splash h2 {
+				text-align: center;
+				font-size: 7rem;
+			}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+	<section class="slide" id="cover">
+		<img src="pictures/efs.jpg" class="efs_logo" alt="Единая фронтальная система">
+		<h2>Единая фронтальная система (ЕФС)</h2>
+		<style type="text/css">
+			#cover .efs_logo {
+				width: 25%;
+				margin: 0 auto 2.5rem;
+				display: block;
+			}
+			#cover h2 {
+				text-align: center;
+				font-size: 5rem;
+				line-height: 1.2;
+			}
+		</style>
 	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+	<section class="slide" id="front">
+		<h2>Фронтальные системы</h2>
+		<ol class="items">
+			<li>Интернет банк&nbsp;&mdash; Сбербанк Онлайн</li>
+			<li class="next">Банкоматы и терминалы</li>
+			<li class="next">Интерфейсы оператора в отделениях и <span class="nowrap">call-центрах</span></li>
 		</ol>
 	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+	<section class="slide" id="purpose">
+		<h2>Задачи разработки ЕФС</h2>
+		<ul class="items">
+			<li>Надежность</li>
+			<li class="next">Безопасность</li>
+			<li class="next">Отказоустойчивость&nbsp;&mdash; доступность <mark class="important-number">99.99%</mark> времени,<br> время отказа&nbsp;&mdash; <mark class="important-number">52&nbsp;минуты</mark> в&nbsp;год</li>
+		</ul>
 	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
+	<section class="slide" id="purpose2">
+		<h2>Задачи разработки ЕФС</h2>
+		<ul class="items">
+			<li>Удобство для разных пользователей</li>
+			<li class="next">Быстрота работы и внедрения (time-to-market)</li>
+		</ul>
+	</section>
+	<section class="slide" id="purpose3">
+		<h2>Снижение времени внедрения продукта</h2>
+		<div class="time-to-market">1 год
+			<span class="arrow">&rarr;</span>
+			<mark class="important-number">1 месяц</mark>
+		</div>
+		<style type="text/css">
+			.time-to-market {
+				font-size: 5rem;
+				text-align: center;
+				margin-top: 9rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="about">
+		<h2>Платформа ЕФС</h2>
+		<div class="fact">
+			<img class="icon icon-hourglass" src="pictures/about_counter.svg" alt="" />
+			<span class="important-number">1</span> год</div>
+		<div class="fact next">
+			<img class="icon" src="pictures/about_head.svg" alt="" />
+			<span class="important-number">~800</span> человек
+		</div>
+		<div class="fact next">
+			<img class="icon" src="pictures/about_lauch.svg" alt="" />
+			<span class="important-number">2018</span> год&nbsp;&mdash; в проме
+		</div>
+		<style type="text/css">
+			#about .icon {
+				vertical-align: middle;
+				margin-right: 1rem;
+				opacity: 0.7;
+			}
+			#about .fact {
+				margin-bottom: 2rem;
+				font-size: 3rem;
+			}
+			#about .icon-hourglass {
+				margin-left: 1rem;
+				margin-right: 2.2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="frontend">
+		<h2>Фронтенд ЕФС</h2>
+		<div class="info"><span class="important-number">~800</span> человек</div>
+		<div class="double next">
+			<div class="column">
+				<img class="icon" src="pictures/frontend_ui_team.svg" alt="" />
+				<h3 class="important-number">Команда платформы</h3>
+				<div>библиотека ui-компонентов</div>
+			</div>
+			<div class="column">
+				<img class="icon applied" src="pictures/frontend_applied.svg" alt="" />
+				<h3 class="important-number">Прикладные проекты</h3>
+				<div>бизнес-логика</div>
+			</div>
+			<div class="next">
+				<img class="arrow" src="pictures/frontend_arrow.svg" alt="">
+			</div>
+			<div class="next">
+				<img class="check" src="pictures/frontend_check.svg" alt="">
+			</div>
+		</div>
+		<style type="text/css">
+			#frontend .icon {
+				width: 40%;
+			}
+			#frontend .double {
+				position: relative;
+			}
+			#frontend .column {
+				text-align: center;
+			}
+			#frontend .info {
+				text-align: center;
+				font-size: 2.5rem;
+				margin-bottom: 2rem;
+			}
+			#frontend h3 {
+				font-size: 2rem;
+			}
+			#frontend .applied {
+				margin-top: 3.15rem;
+			}
+			#frontend .arrow {
+				position: absolute;
+				left: 50%;
+				margin-left: -2rem;
+				top: 50%;
+				margin-top: -2rem;
+			}
+			#frontend .check {
+				position: absolute;
+				left: 1.5rem;
+				top: 0;
+			}
+		</style>
+	</section>
+	<section class="slide" id="framework">
+		<h2 class="vertical-centered cover-title">Библиотека<br> <span class="nowrap">ui-компонентов</span></h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+	</section>
+	<section class="slide" id="include_1">
+		<h2>Контроллы</h2>
+		<img src="pictures/include_controls.svg" class="framework_screen" alt="Контроллы">
+	</section>
+	<section class="slide" id="include_2">
+		<h2>Способы вывода информации</h2>
+		<img src="pictures/include_info.svg" class="widescreen" alt="Способы вывода информации">
+	</section>
+	<section class="slide" id="include_3">
+		<h2>Сетка</h2>
+		<img src="pictures/include_cell.svg" class="framework_screen" alt="Сетка">
+	</section>
+	<section class="slide" id="include_4">
+		<h2>Загрузка фотографий и файлов</h2>
+		<img src="pictures/include_uploads.svg" class="widescreen" alt="Загрузка фотографий и файлов">
+		<style type="text/css">
+			#include_4 h2 {
+				font-size: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="include_5">
+		<h2>Компонент динамической подгрузки приложений</h2>
+		<img src="pictures/include_lauch.svg" class="framework_screen" alt="Компонент динамической загрузки приложений">
+		<style type="text/css">
+			#include_5 h2 {
+				font-size: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="versions">
+		<h2>Поддержка браузеров</h2>
+		<div class="info next">IE8 <span class="small"> или </span> IE11</div>
+		<style type="text/css">
+			#versions .info {
+				text-align: center;
+				font-size: 8rem;
+			}
+			#versions .small {
+				font-size: 5rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="versions_cry">
+		<h2>Поддержка браузеров</h2>
+		<img src="pictures/versions_cry.png" class="cry" alt="CRY">
+		<style type="text/css">
+			#versions_cry .cry {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 70%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="activex">
+		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
+	</section>
+	<section class="slide" id="technologies">
+		<h2 class="vertical-centered cover-title">Технологии</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+	</section>
+	<section class="slide" id="framework-choice">
+		<img src="pictures/framework_react.png" class="framework_screen centered-picture" alt="React">
+		<style type="text/css">
+			#framework-choice .framework_screen {
+				width: 50%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="react-choice">
+		<h2>React</h2>
+		<ul class="items">
+			<li>Компонентный подход для построения удобного API</li>
+			<li class="next">Читабельность кода, его дальнейшее переиспользование</li>
+			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React.Native</li>
+		</ul>
+	</section>
+	<section class="slide" id="type-choice">
+		<img src="pictures/typescript_choice.png" class="framework_screen centered-picture" alt="Typecript">
+		<style type="text/css">
+			#type-choice .framework_screen {
+				width: 50%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="typescript-choice">
+		<h2>Typescript</h2>
+		<ul class="items">
+			<li>строгая типизация (тип <code>any</code> почти не используем)</li>
+			<li class="next">избегаем &laquo;глупых&raquo; ошибок при разработке</li>
+			<li class="next">читабельность кода</li>
+		</ul>
+	</section>
+	<section class="slide" id="product-problems">
+		<h2 class="vertical-centered cover-title">Проблемы производительности</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+	</section>
+	<section class="slide" id="dev-problems">
+		<h2>Как решали</h2>
+		<ul class="items next">
+			<li>сделали компоненты &laquo;глупыми&raquo;</li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-2">
+		<div class="small-code">
+			<pre>
+				<code>export interface State {</code>
+				<code>	<mark>value</mark>: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>	onChange() = value => this.setState({ <mark>value</mark> })</code>
+				<code>	render() {</code>
+					<code>		&lt;input value={this.state.<mark>value</mark> }
+			onChange={this.onChange} /&gt;</code>
+				<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-3">
+		<div class="small-code">
+			<pre>
+				<code>export interface State {</code>
+				<code>	value: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>	<mark>onChange</mark>() = value => this.setState({ value })</code>
+				<code>	render() {</code>
+					<code>		&lt;input value={this.state.value }
+			onChange={this.<mark>onChange</mark>} /&gt;</code>
+				<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-4">
+		<div class="small-code">
+			<pre>
+				<code>export interface FormState {</code>
+				<code>	<mark>value</mark>: string</code>
+				<code>}</code>
+				<code>export class <mark class="important">Form</mark> extends React.Component&lt;Props, FormState&gt; {</code>
+						<code>	changeInput = value => this.setState({ <mark>value</mark> })</code>
+
+						<code>	render() {</code>
+						<code>		&lt;Input value={this.state.value}
+			onChange={this.changeInput} /&gt;</code>
+					<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-5">
+		<div class="small-code">
+			<pre>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, {}&gt; {</code>
+					<code>	render() {</code>
+					<code>		&lt;input value={this.props.<mark>value</mark> }
+			onChange={this.props.onChange } /&gt;</code>
+					<code>	}</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-6">
+		<h2>Как решали</h2>
+		<ul class="items">
+			<li>добавили <code>shouldComponentUpdate</code></li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-7">
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>shouldComponentUpdate(nextProps, nextState) {</code>
+			<code>	<span class="comment">// делаем поверхностную проверку свойств</span></code>
+			<code>}</code>
+		</pre>
+		<div class="next">
+			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>
+		</div>
+	</section>
+	<section class="slide" id="dev-problems-8">
+		<h2>Как решали</h2>
+		<ul class="items">
+			<li>избавились от утечек памяти в колбеках</li>
+		</ul>
+	</section>
+	<section class="slide" id="dev-problems-9">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code> 	render() {</code>
+			<code>		&lt;button&gt; onClick={(e) => console.log(e);}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
 		</pre>
 	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+	<section class="slide" id="dev-problems-10">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code> 	render() {</code>
+			<code>		&lt;button&gt; onClick={<mark>(e) => console.log(e);</mark>}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
 	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
+	<section class="slide" id="dev-problems-11">
+		<pre>
+			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
+			<code>	<mark>onPost</mark> = e => console.log(e);</code>
+			<code>	render() {</code>
+			<code>		&lt;button&gt; onClick={<mark>this.onPost</mark>}></code>
+			<code>			Text</code>
+			<code>		&lt;/button&gt;</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+	<section class="slide" id="dev-problems-12">
+		<h2>Как решали</h2>
+		<ul class="items">
+			<li>используем <mark class="important-number">Redux</mark> для контроля <code>state</code> приложения</li>
+		</ul>
+	</section>
+	<section class="slide" id="app">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code>&lt;UFSProvider&gt;</code>
+        		<code>	&lt;Workspace&gt;</code>
+				<code>		&lt;AppContainer&gt;</code>
+		</pre>
+	</section>
+	<section class="slide" id="app2">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code>&lt;UFSProvider&gt; - создает Store на странице</code>
+        		<code class="comment">	&lt;Workspace&gt; </code>
+				<code class="comment">		&lt;AppContainer&gt; </code>
+		</pre>
+	</section>
+	<section class="slide" id="app3">
+		<h2>Стандартное приложение</h2>
+		<pre>
+			<code class="comment">&lt;UFSProvider&gt;</code>
+        		<code>	&lt;Workspace&gt; - рабочее место приложения</code>
+				<code class="comment">		&lt;AppContainer&gt; </code>
+		</pre>
+	</section>
+	<section class="slide" id="app4">
+		<h2>Рабочее место</h2>
+		<ul class="items">
+			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
+			<li class="next">включает в себя &laquo;обвязку&raquo; приложения</li>
+			<li class="next">содержит в себе <code>&lt;AppContainer&gt;</code></li>
+		</ul>
+	</section>
+	<section class="slide" id="app5">
+		<h2>AppContainer</h2>
+		<ul class="items">
+			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
+			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки компонентов по url</li>
+			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
+		</ul>
+	</section>
+	<section class="slide" id="app6">
+		<h2>AppContainer</h2>
+		<ul class="items">
+			<li>Приложение - js-файл</li>
+			<li class="next">подгрузка нового приложения - метод <code>openApp('file_address')</code></li>
+		</ul>
+	</section>
+	<section class="slide" id="css">
+		<h2>CSS</h2>
+		<img class="postcss" src="pictures/postcss.png" alt="Postcss">
+		<span class="plus"> + </span>
+		<img class="cssmodules" src="pictures/css-modules.png" alt="CssModules">
+		<style type="text/css">
+			#css .postcss,
+			#css .cssmodules {
+				width: 40%;
+				vertical-align: bottom;
+			}
+			#css .cssmodules {
+				margin-left: 1rem
+			}
+			#css .plus {
+				font-size: 5rem;
+				padding: 0 1rem;
+			}
 		</style>
 	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+	<section class="slide" id="postcss">
+		<h2>Postcss</h2>
+		<ul class="items">
+			<li>Быстрота сборки</li>
+			<li class="next">Быстро развивается и поддерживается community</li>
+			<li class="next">Хотелось попробовать что-то новое</li>
+		</ul>
 	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+	<section class="slide" id="cssmodules">
+		<h2>СssModules</h2>
+		<ul class="items">
+			<li>Стили разных компонент начали перекрывать друг друга</li>
+			<li class="next">2 разных приложения в рамках одной страницы</li>
+		</ul>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.

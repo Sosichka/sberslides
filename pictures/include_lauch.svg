@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="846px" height="495px" viewBox="0 0 846 495" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="781" height="430" rx="6"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100000001 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="781" height="430" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M32,64 C49.673112,64 64,49.673112 64,32 C64,14.326888 49.673112,0 32,0 C14.326888,0 0,14.326888 0,32 C0,49.673112 14.326888,64 32,64 Z M32,58 C46.3594035,58 58,46.3594035 58,32 C58,17.6405965 46.3594035,6 32,6 C17.6405965,6 6,17.6405965 6,32 C6,46.3594035 17.6405965,58 32,58 Z" id="path-4"></path>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="block" transform="translate(17.000000, 20.000000)">
+                <g id="Rectangle-2-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#CCCCCC" mask="url(#mask-3)" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Большой-лоадер" transform="translate(264.000000, 154.000000)">
+                    <g id="Group" transform="translate(94.000000, 0.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#3FC33E" xlink:href="#path-4"></use>
+                        <polygon id="Path-2" fill="#D6F4C9" mask="url(#mask-5)" points="31.5 -14 31.5 32 62.0788969 -7.45236186"></polygon>
+                    </g>
+                    <text id="Ждём-ответа-от-серве" font-family="PTSans-Bold, PT Sans" font-size="20" font-weight="bold" line-spacing="22" fill="#262626">
+                        <tspan x="11" y="96">Ждём ответа от сервера…</tspan>
+                    </text>
+                    <text id="Обычно-это-занимает-" font-family="PTSans-Regular, PT Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#000000">
+                        <tspan x="0" y="117">Обычно это занимает 30–40 секунд</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
