@@ -516,6 +516,118 @@
 			<li class="next">2 разных приложения в рамках одной страницы</li>
 		</ul>
 	</section>
+	<section class="slide" id="cssmodules2">
+		<h2>Плагины для PostCSS</h2>
+		<ol class="items">
+			<li>pnested</li>
+			<li>autoprefixer</li>
+		</ol>
+		<img src="pictures/cssmodules-dragon.png" alt="CSS Modules">
+		<style>
+			#cssmodules2 img {
+				position: absolute;
+				right: 4rem;
+				bottom: 4.5rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="css-example">
+		<div class="column">
+			<h2>css</h2>
+			<pre>
+				<code><mark>.button</mark> {</code>
+				<code>	color: #FFF;</code>
+				<code>	background: #F00</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="css-example2">
+		<div class="column">
+			<h2>.tsx</h2>
+			<pre>
+				<code>import * as styles from './Button.css';</code>
+				<code>&lt;button className={styles.<mark>button</mark>}&gt;</code>
+				<code>	Кнопка</code>
+				<code>&lt;/button&gt;</code>
+			</pre>
+		</div>
+	</section>
+	<section class="slide" id="css-dts">
+		<h2 class="vertical-centered">
+			TS &rarr; CSSModules &rarr; d.ts
+		</h2>
+		<style>
+			#css-dts h2 {
+				font-size: 5rem;
+				text-align: center;
+				white-space: nowrap;
+			}
+		</style>
+	</section>
+	<section class="slide" id="webpack">
+		<h2>Сборка проекта</h2>
+		<img src="pictures/gulp.svg" class="gulp" alt="gulp">
+		<span class="plus">+</span>
+		<img src="pictures/webpack.png" class="webpack" alt="webpack">
+		<style>
+			.gulp,
+			.webpack {
+				width: 10rem;
+				vertical-align: bottom;
+			}
+			#webpack .plus {
+				font-size: 5rem;
+				padding: 0 3rem;
+				vertical-align: bottom;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Gulp</h2>
+		<ul class="items">
+			<li>генерация документации и примеров</li>
+			<li class="next">генерация d.ts файлов для css</li>
+			<li class="next">запуск тестов</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Сборка</h2>
+		<div class="items">
+			<div><code>/dist</code> - для прикладных проектов</div>
+			<div><code>/docs</code> - документация</div>
+		</div>
+		<div>
+			<pre>
+
+				<ul>
+					<li>main.js</li>
+					<li>ufs-ui.css</li>
+					<li>images</li>
+					<li>fonts</li>
+					<li>index.html</li>
+				</ul>
+
+			</pre>
+		</div>
+	</section>
+	<section class="slide">
+		<h2>Сборка</h2>
+		<div>
+			<code>/docs</code>
+			<ul>
+				<li>main.js</li>
+				<li>ufs-ui.css</li>
+				<li>images</li>
+				<li>fonts</li>
+				<li>index.html</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide">
+		<h2>Webpack</h2>
+		<div class="items">Сборка статики</div>
+	</section>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
