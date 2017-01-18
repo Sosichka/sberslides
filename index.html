@@ -48,6 +48,12 @@
 		.slide .cover-title {
 			color: #fff
 		}
+		.big-title {
+			font-size: 3rem;
+		}
+		.centered-title {
+			text-align: center;
+		}
 	</style>
 </head>
 <body class="shower list">
@@ -300,6 +306,21 @@
 			<li class="next">избегаем &laquo;глупых&raquo; ошибок при разработке</li>
 			<li class="next">читабельность кода</li>
 		</ul>
+	</section>
+	<section class="slide" id="component">
+		<h2>Компонент библиотеки</h2>
+		<img src="pictures/comp-structure.png" class="component-img" alt="Component">
+		<div class="next items">
+			<span class="important-number">~ 50</span> компонентов
+		</div>
+		<style>
+			#component .component-img {
+				width: 10rem;
+			}
+			#component .items {
+				font-size: 4rem;
+			}
+		</style>
 	</section>
 	<section class="slide" id="product-problems">
 		<h2 class="vertical-centered cover-title">Проблемы производительности</h2>
@@ -591,42 +612,248 @@
 			<li class="next">запуск тестов</li>
 		</ul>
 	</section>
-	<section class="slide">
-		<h2>Сборка</h2>
-		<div class="items">
-			<div><code>/dist</code> - для прикладных проектов</div>
-			<div><code>/docs</code> - документация</div>
-		</div>
-		<div>
-			<pre>
-
-				<ul>
-					<li>main.js</li>
-					<li>ufs-ui.css</li>
-					<li>images</li>
-					<li>fonts</li>
-					<li>index.html</li>
-				</ul>
-
-			</pre>
-		</div>
+	<section class="slide" id="webpack_screen">
+		<h2>Сборка Webpack</h2>
+		index.tsx
+		<img src="pictures/webpack_file.png" class="widescreen" alt="Webpack">
+		<style>
+			.widescreen {
+				width: 90%;
+			}
+		</style>
 	</section>
 	<section class="slide">
 		<h2>Сборка</h2>
 		<div>
-			<code>/docs</code>
+			<code>/dist</code> - папка сборки
 			<ul>
-				<li>main.js</li>
-				<li>ufs-ui.css</li>
-				<li>images</li>
 				<li>fonts</li>
-				<li>index.html</li>
+				<li>images</li>
+				<li>src</li>
+				<li>bundle.js</li>
+				<li>ufs-ui.css</li>
 			</ul>
 		</div>
 	</section>
-	<section class="slide">
-		<h2>Webpack</h2>
-		<div class="items">Сборка статики</div>
+	<section class="slide" id="docs">
+		<h2>Документация</h2>
+		<img src="pictures/webpack-api.png" class="widescreen" alt="API">
+	</section>
+
+	<section class="slide" id="docs-seq">
+		<h2>Документация</h2>
+		<div class="step">
+			<div class="step-pic"><img src="pictures/components.svg" alt=""></div>
+			<div>Components</div>
+		</div>
+		<div class="step next">
+			<div class="step-pic"><img class="typedoc" src="pictures/gulp-typedoc.png" alt=""></div>
+			<div>gulp-typedoc</div>
+		</div>
+		<div class="step next">
+			<div class="step-pic"><img src="pictures/json.svg" alt=""></div>
+			<div>.json</div>
+		</div>
+		<div class="step next">
+			<div class="step-pic"><img src="pictures/structure.svg" alt=""></div>
+			<div>Props structure</div>
+		</div>
+		<style>
+			#docs-seq .step {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 7rem;
+				position: relative;
+				margin-bottom: 3rem;
+			}
+			#docs-seq .step:last-of-type {
+				margin-right: 0;
+			}
+			#docs-seq .step:last-of-type:after {
+				display: none;
+			}
+			#docs-seq .typedoc {
+				width: 15rem;
+			}
+			#docs-seq .step:after {
+				position: absolute;
+				right: -5rem;
+				top: 50%;
+				background: url("pictures/arrow.svg") 100% 0 no-repeat;
+				margin-top: -2rem;
+				content: " ";
+				width: 3rem;
+				height: 3rem;
+			}
+			#docs-seq .step-pic,
+			#docs-seq .step-pic img{
+				height: 6rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="docs_result">
+		<h2>Документация</h2>
+		<div class="items">
+			<div>
+				<pre>
+					<code>&lt;PropsDoc target={<mark>Button</mark>} /&gt;</code>
+				</pre>
+			</div>
+		</div>
+		<table>
+			<tbody>
+			<tr>
+				<th scope="col" style="width: 300px">Свойство</th>
+				<th style="width: 300px">Тип</th>
+				<th>Описание</th>
+			</tr>
+			<tr>
+				<td>width</td>
+				<td>string | number</td>
+				<td class="table-text">Ширина таблицы. По&nbsp;умолчанию&nbsp;&mdash; 100%. Можно указывать в&nbsp;процентах или в&nbsp;пикселях. Число без единиц измерения задает ширину в&nbsp;пикселях.</td>
+			</tr>
+			</tbody>
+		</table>
+		<style>
+			#docs_result .table-text {
+				line-height: 1.3;
+				font-size: 1.4rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="testing">
+		<h2>Unit-тестирование</h2>
+		<div>
+			<img src="pictures/karma-logo.svg" alt="Karma">
+			<img src="pictures/jasmine.svg" alt="Karma">
+			<div class="test-title">React Test Utils</div>
+		</div>
+		<style>
+			#testing img {
+				width: 40%;
+				margin-right: 3rem;
+			}
+			#testing .test-title {
+				font-size: 5rem;
+				color: #28456d;
+			}
+		</style>
+	</section>
+	<section class="slide" id="gemini">
+		<h2>CSS-тестирование</h2>
+		<div class="big-title">Gemini от Yandex</div>
+		<ul>
+			<li class="next">Регрессионное тестирование</li>
+			<li class="next">Поддержка IE8</li>
+			<li class="next">Простая прикрутка</li>
+		</ul>
+	</section>
+	<section class="slide" id="gemini2">
+		<h2>CSS-тестирование</h2>
+		<img src="pictures/gemini.png" class="css-result" alt="Gemini">
+		<style>
+			#gemini2 .css-result {
+				width: 40%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="gemini3">
+		<h2>Проблемы</h2>
+		<ul class="items">
+			<li>важно окружение, в котором запускаешь тесты</li>
+			<li>не смогли запустить тесты в 2-х браузерах<br> одновременно</li>
+		</ul>
+	</section>
+	<section class="slide" id="jenkins">
+		<h2>Непрерывная интеграция</h2>
+		<div class="jenkins">
+			<img src="pictures/jenkins_logo.png" class="jenkins" alt="Jenkins">
+			<div>Jenkins</div>
+		</div>
+		<style>
+			#jenkins .jenkins {
+				width: 15rem;
+				text-align: center;
+			}
+		</style>
+	</section>
+	<section class="slide" id="deploy">
+		<h2>Deploy</h2>
+		<img src="pictures/npm.svg" class="npm" alt="NPM">
+		<div class="items">
+			<div>3 версии библиотеки</div>
+			<div>Sinopia</div>
+		</div>
+		<style>
+			#deploy .npm {
+				width: 10rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="team">
+		<h2>Команда</h2>
+		<div><img src="pictures/developers.svg" class="team centered-picture" alt="Team"></div>
+		<div class="centered-title"><mark class="important-number">8 человек</mark></div>
+		<style>
+			#team .team {
+				width: 20rem;
+				margin-bottom: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="laws">
+		<h2>Команда</h2>
+		<div class="items">
+			<div class="item_steps">
+				<img class="laws_icon" src="pictures/scrum.svg" alt="Scrum">
+				<span>Scrum</span>
+			</div>
+			<div class="next item_steps">
+				<img class="laws_icon" src="pictures/code_review.svg" alt="Code review">
+				<span>Code review</span>
+			</div>
+			<div class="next item_steps">
+				<img class="laws_icon" src="pictures/code_style.svg" alt="Code style">
+				<span>Code style</span>
+			</div>
+		</div>
+		<style>
+			#laws .laws_icon {
+				width: 4rem;
+				vertical-align: middle;
+				margin-right: 1rem;
+			}
+			#laws .item_steps {
+				margin-bottom: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="team3">
+		<h2>Инструментарий</h2>
+		<div class="centered-title">
+			<img class="instr" src="pictures/jira.png" alt="Jira">
+			<img class="instr" src="pictures/stash.png" alt="Confluence">
+			<img class="instr2" src="pictures/confluence.png" alt="Stash">
+		</div>
+		<style>
+			#team3 .instr {
+				vertical-align: middle;
+				width: 20rem;
+				margin-right: 3rem;
+				margin-bottom: 5rem;
+			}
+			#team3 .instr2 {
+				width: 30rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="team4">
+		<h2>Требования к кандидату</h2>
+		<ul>
+			<li>Высшее профильное образование</li>
+			<li class="next">Знание javascript</li>
+			<li class="next">Знание css</li>
+		</ul>
 	</section>
 	<!--
 		To hide progress bar from entire presentation
