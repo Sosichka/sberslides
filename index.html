@@ -271,6 +271,18 @@
 	<section class="slide" id="activex">
 		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
 	</section>
+	<section class="slide">
+		<h2>New feature?</h2>
+		<img src="pictures/ie8_question.png" alt="IE8">
+	</section>
+	<section class="slide" id="ie8_debug">
+		<img src="pictures/ie8_debug.png" class="centered-picture" alt="IE8">
+		<style>
+			#ie8_debug img {
+				width: 70%;
+			}
+		</style>
+	</section>
 	<section class="slide" id="technologies">
 		<h2 class="vertical-centered cover-title">Технологии</h2>
 		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
@@ -636,7 +648,7 @@
 		</div>
 	</section>
 	<section class="slide" id="docs">
-		<h2>Документация</h2>
+		<h2>Props API</h2>
 		<img src="pictures/webpack-api.png" class="widescreen" alt="API">
 	</section>
 
@@ -739,6 +751,15 @@
 			}
 		</style>
 	</section>
+	<section class="slide" id="coverage">
+		<h2>Покрытие тестами</h2>
+		<div class="coverage">remap-istanbul</div>
+		<style>
+			#coverage .coverage {
+				font-size: 3rem;
+			}
+		</style>
+	</section>
 	<section class="slide" id="gemini">
 		<h2>CSS-тестирование</h2>
 		<div class="big-title">Gemini от Yandex</div>
@@ -757,13 +778,13 @@
 			}
 		</style>
 	</section>
-	<section class="slide" id="gemini3">
-		<h2>Проблемы</h2>
-		<ul class="items">
-			<li>важно окружение, в котором запускаешь тесты</li>
-			<li>не смогли запустить тесты в 2-х браузерах<br> одновременно</li>
-		</ul>
-	</section>
+	<!--<section class="slide" id="gemini3">-->
+		<!--<h2>Проблемы</h2>-->
+		<!--<ul class="items">-->
+			<!--<li>важно окружение, в котором запускаешь тесты</li>-->
+			<!--<li>не смогли запустить тесты в 2-х браузерах<br> одновременно</li>-->
+		<!--</ul>-->
+	<!--</section>-->
 	<section class="slide" id="jenkins">
 		<h2>Непрерывная интеграция</h2>
 		<div class="jenkins">
@@ -779,24 +800,20 @@
 	</section>
 	<section class="slide" id="deploy">
 		<h2>Deploy</h2>
-		<img src="pictures/npm.svg" class="npm" alt="NPM">
-		<div class="items">
-			<div>3 версии библиотеки</div>
-			<div>Sinopia</div>
-		</div>
-		<style>
-			#deploy .npm {
-				width: 10rem;
-			}
-		</style>
+		<ul class="items">
+			<li>библиотека поставляется в виде npm-пакета</li>
+			<li class="next">3 версии библиотеки</li>
+			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sinopia</li>
+		</ul>
+
 	</section>
 	<section class="slide" id="team">
 		<h2>Команда</h2>
 		<div><img src="pictures/developers.svg" class="team centered-picture" alt="Team"></div>
-		<div class="centered-title"><mark class="important-number">8 человек</mark></div>
+		<div class="centered-title big-title"><mark class="important-number">8 человек</mark></div>
 		<style>
 			#team .team {
-				width: 20rem;
+				width: 25rem;
 				margin-bottom: 2rem;
 			}
 		</style>
@@ -819,12 +836,15 @@
 		</div>
 		<style>
 			#laws .laws_icon {
-				width: 4rem;
+				width: 5rem;
 				vertical-align: middle;
 				margin-right: 1rem;
 			}
 			#laws .item_steps {
 				margin-bottom: 2rem;
+			}
+			#laws .items {
+				font-size: 3rem;
 			}
 		</style>
 	</section>
@@ -849,10 +869,18 @@
 	</section>
 	<section class="slide" id="team4">
 		<h2>Требования к кандидату</h2>
-		<ul>
+		<ul class="items">
 			<li>Высшее профильное образование</li>
 			<li class="next">Знание javascript</li>
 			<li class="next">Знание css</li>
+		</ul>
+	</section>
+	<section class="slide" id="team5">
+		<h2>Планы на будущее</h2>
+		<ul class="items">
+			<li>серверный рендеринг приложений</li>
+			<li class="next">open source?</li>
+			<li class="next">отказ от IE8</li>
 		</ul>
 	</section>
 	<!--
