@@ -340,11 +340,11 @@
 		<h2>Компонент библиотеки</h2>
 		<img src="pictures/comp-structure.png" class="component-img" alt="Component">
 		<div class="next items">
-			<span class="important-number">~ 50</span> компонентов
+			<span class="important-number">~ 70</span> компонентов
 		</div>
 		<style>
 			#component .component-img {
-				width: 10rem;
+				width: 22rem;
 			}
 			#component .items {
 				font-size: 4rem;
@@ -435,7 +435,7 @@
 			<code>}</code>
 		</pre>
 		<div class="next">
-			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>
+			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark> - передаем другой объект
 		</div>
 	</section>
 	<section class="slide" id="dev-problems-8">
@@ -448,7 +448,7 @@
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code> 	render() {</code>
-			<code>		&lt;button&gt; onClick={(e) => console.log(e);}></code>
+			<code>		&lt;button onClick={(e) => console.log(e);}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
@@ -459,7 +459,7 @@
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code> 	render() {</code>
-			<code>		&lt;button&gt; onClick={<mark>(e) => console.log(e);</mark>}></code>
+			<code>		&lt;button onClick={<mark>(e) => console.log(e);</mark>}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
@@ -471,12 +471,20 @@
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code>	<mark>onPost</mark> = e => console.log(e);</code>
 			<code>	render() {</code>
-			<code>		&lt;button&gt; onClick={<mark>this.onPost</mark>}></code>
+			<code>		&lt;button onClick={<mark>this.onPost</mark>}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
 			<code>}</code>
 		</pre>
+	</section>
+	<section class="slide" id="app1">
+		<img src="pictures/redux.png" class="centered-picture vertical-centered" alt="REDUX">
+		<style>
+			#app1 .centered-picture {
+				width: 80%;
+			}
+		</style>
 	</section>
 	<section class="slide" id="app">
 		<h2>Стандартное приложение</h2>
@@ -509,7 +517,7 @@
 		</pre>
 	</section>
 	<section class="slide" id="app4">
-		<h2>Рабочее место</h2>
+		<h2>&lt;Workspace&gt;</h2>
 		<ul class="items">
 			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
 			<li class="next">включает в себя &laquo;обвязку&raquo; приложения</li>
@@ -517,18 +525,34 @@
 		</ul>
 	</section>
 	<section class="slide" id="app5">
-		<h2>AppContainer</h2>
+		<h2>&lt;AppContainer&gt;</h2>
 		<ul class="items">
 			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
-			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки компонентов по url</li>
+			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки приложений по url</li>
 			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
 		</ul>
 	</section>
 	<section class="slide" id="app6">
-		<h2>AppContainer</h2>
+		<h2>loadUrl</h2>
+		<pre>
+			<code>export default url => new Promise(</code>
+			<code>	resolve => <mark>System.import(url)</mark></code>
+			<code> 		.then(data => resolve(data['default'])));</code>
+		</pre>
+	</section>
+	<section class="slide" id="app7">
+		<h2>&lt;AppContainer&gt;</h2>
 		<ul class="items">
 			<li>Приложение - js-файл</li>
-			<li class="next">подгрузка нового приложения - метод <code>openApp('file_address')</code></li>
+			<li class="next">loadUrl выполняется после того, как компонент отрендерился</li>
+		</ul>
+	</section>
+	<section class="slide" id="app8">
+		<h2>Приложение</h2>
+		<ul class="items">
+			<li>может иметь статическое свойство <mark>reducer</mark></li>
+			<li class="next"><mark>state</mark> приложения будет доступен в <mark>state.app</mark></li>
+			<li class="next">в любой момент может вызвать <mark>openApp</mark></li>
 		</ul>
 	</section>
 	<section class="slide" id="css">
@@ -613,19 +637,19 @@
 			}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Вложенность компонентов</h2>
-		<pre>
-			<code>&lt;TabSelector&gt;</code>
-			<code>	&lt;Button&gt;Наличные&lt;/Button&gt;</code>
-			<code>	&lt;Button&gt;Карта&lt;/Button&gt;</code>
-			<code>&lt;/TabSelector&gt;</code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>TabSelector</h2>
-		<img src="pictures/tabselector.svg" alt="">
-	</section>
+	<!--<section class="slide">-->
+		<!--<h2>Вложенность компонентов</h2>-->
+		<!--<pre>-->
+			<!--<code>&lt;TabSelector&gt;</code>-->
+			<!--<code>	&lt;Button&gt;Наличные&lt;/Button&gt;</code>-->
+			<!--<code>	&lt;Button&gt;Карта&lt;/Button&gt;</code>-->
+			<!--<code>&lt;/TabSelector&gt;</code>-->
+		<!--</pre>-->
+	<!--</section>-->
+	<!--<section class="slide">-->
+		<!--<h2>TabSelector</h2>-->
+		<!--<img src="pictures/tabselector.svg" alt="">-->
+	<!--</section>-->
 	<section class="slide" id="webpack">
 		<h2>Сборка проекта</h2>
 		<img src="pictures/gulp.svg" class="gulp" alt="gulp">
@@ -652,7 +676,7 @@
 		<ul class="items">
 			<li>генерация документации и примеров</li>
 			<li class="next">генерация d.ts файлов для css</li>
-			<li class="next">запуск тестов</li>
+			<li class="next">запуск unit-тестов</li>
 		</ul>
 	</section>
 	<section class="slide" id="webpack_screen">
@@ -680,7 +704,16 @@
 	</section>
 	<section class="slide" id="docs">
 		<h2>Props API</h2>
-		<img src="pictures/webpack-api.png" class="widescreen" alt="API">
+		<pre>
+			<code>export interface Props {</code>
+			<code>	<span class="comment">/* значение, задаваемое в поле */</span></code>
+			<code>	value?: string;</code>
+			<br/>
+			<code>	<span class="comment">/* коллбек вызывается каждый раз при изменении поля*/</span></code>
+			<code>	onChange?: (value: string) => void;</code>
+			<code>}</code>
+		</pre>
+
 	</section>
 
 	<section class="slide" id="docs-seq">
@@ -902,8 +935,8 @@
 		<h2>Требования к кандидату</h2>
 		<ul class="items">
 			<li>Высшее профильное образование</li>
-			<li class="next">Знание javascript</li>
-			<li class="next">Знание css</li>
+			<li class="next">Знание JavaScript</li>
+			<li class="next">Знание Css</li>
 		</ul>
 	</section>
 	<section class="slide" id="team5">
