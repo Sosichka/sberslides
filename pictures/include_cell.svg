@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1250px" height="781px" viewBox="0 0 1250 781" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1279px" height="1055px" viewBox="0 0 1279 1055" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
+    <title>Desktop</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="1220" height="779.083431" rx="10"></rect>
     </defs>
-    <g id="Структура" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="3_Структура/302_Рабочая-область-с-сеткой" transform="translate(-613.000000, -266.000000)">
-            <g id="Group-2" transform="translate(613.000000, 263.000000)">
+    <g id="Page-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="Group-2" transform="translate(15.000000, 167.000000)">
                 <g id="Рабочая-область" transform="translate(0.000000, 3.917744)">
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
