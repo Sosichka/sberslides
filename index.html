@@ -487,6 +487,7 @@
 				<code>		&lt;AppContainer&gt;</code>
 		</pre>
 	</section>
+	<section></section>
 	<section class="slide white">
 		<img src="pictures/rm.svg" class="cover height" alt="RM">
 	</section>
@@ -533,17 +534,11 @@
 			<code> 		.then(data => resolve(data['default'])));</code>
 		</pre>
 	</section>
-	<section class="slide" id="app7">
-		<h2>&lt;AppContainer&gt;</h2>
-		<ul class="items">
-			<li>приложение - js-файл</li>
-			<li class="next">loadUrl выполняется после того, как компонент отрендерился</li>
-		</ul>
-	</section>
 	<section class="slide" id="app8">
 		<h2>Приложение</h2>
 		<ul class="items">
-			<li>может иметь статическое свойство <mark>reducer</mark></li>
+			<li>js-файл</li>
+			<li class="next">может иметь статическое свойство <mark>reducer</mark></li>
 			<li class="next"><mark>state</mark> приложения будет доступен в <mark>state.app</mark></li>
 			<li class="next">в любой момент может вызвать <mark>openApp</mark></li>
 		</ul>
@@ -577,7 +572,7 @@
 		</ul>
 	</section>
 	<section class="slide" id="cssmodules">
-		<h2>Сss Modules</h2>
+		<h2>CSS Modules</h2>
 		<ul class="items">
 			<li>стили разных компонент начали перекрывать друг друга</li>
 			<li class="next">2 разных приложения в рамках одной страницы</li>
@@ -601,7 +596,7 @@
 		</style>
 	</section>
 	<section class="slide" id="css-example">
-		<h2>css</h2>
+		<h2>.css</h2>
 		<pre>
 			<code><mark>.button</mark> {</code>
 			<code>	color: #FFF;</code>
@@ -622,7 +617,7 @@
 	</section>
 	<section class="slide" id="css-dts">
 		<h2 class="vertical-centered">
-			TS &rarr; CSSModules &rarr; d.ts
+			TS &rarr; CSS Modules &rarr; d.ts
 		</h2>
 		<style>
 			#css-dts h2 {
@@ -861,7 +856,7 @@
 		<h2>Deploy</h2>
 		<ul class="items">
 			<li>библиотека поставляется в виде npm-пакета</li>
-			<li class="next">3 версии библиотеки</li>
+			<li class="next">4 версии библиотеки</li>
 			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sinopia</li>
 		</ul>
 
