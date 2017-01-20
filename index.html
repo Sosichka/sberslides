@@ -487,7 +487,14 @@
 				<code>		&lt;AppContainer&gt;</code>
 		</pre>
 	</section>
-	<section></section>
+	<section class="slide">
+		<h2>Storе</h2>
+		<ul>
+			<li>workspace&nbsp;&mdash; state рабочего места</li>
+			<li class="next">appContainer&nbsp;&mdash; для компонента AppContainer</li>
+			<li class="next">app&nbsp;&mdash; state приложений, загруженных в AppContainer</li>
+		</ul>
+	</section>
 	<section class="slide white">
 		<img src="pictures/rm.png" class="cover height" alt="RM">
 	</section>
@@ -502,15 +509,8 @@
 				<code class="comment">		&lt;AppContainer&gt; </code>
 		</pre>
 	</section>
-	<section class="slide" id="app3">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code class="comment">&lt;UFSProvider&gt;</code>
-        		<code>	&lt;Workspace&gt; - рабочее место приложения</code>
-				<code class="comment">		&lt;AppContainer&gt; </code>
-		</pre>
-	</section>
-	<section class="slide" id="app4">
+
+	<section class="slide">
 		<h2>&lt;Workspace&gt;</h2>
 		<ul class="items">
 			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
@@ -518,7 +518,7 @@
 			<li class="next">содержит в себе <code>&lt;AppContainer&gt;</code></li>
 		</ul>
 	</section>
-	<section class="slide" id="app5">
+	<section class="slide">
 		<h2>&lt;AppContainer&gt;</h2>
 		<ul class="items">
 			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
@@ -526,7 +526,7 @@
 			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
 		</ul>
 	</section>
-	<section class="slide" id="app6">
+	<section class="slide">
 		<h2>loadUrl</h2>
 		<pre>
 			<code>export default url => new Promise(</code>
@@ -534,7 +534,7 @@
 			<code> 		.then(data => resolve(data['default'])));</code>
 		</pre>
 	</section>
-	<section class="slide" id="app8">
+	<section class="slide">
 		<h2>Приложение</h2>
 		<ul class="items">
 			<li>js-файл</li>
@@ -596,7 +596,7 @@
 		</style>
 	</section>
 	<section class="slide" id="css-example">
-		<h2>.css</h2>
+		<h2>button.css</h2>
 		<pre>
 			<code><mark>.button</mark> {</code>
 			<code>	color: #FFF;</code>
@@ -606,9 +606,9 @@
 	</section>
 	<section class="slide" id="css-example2">
 		<div class="column">
-			<h2>.tsx</h2>
+			<h2>button.tsx</h2>
 			<pre>
-				<code>import * as styles from './Button.css';</code>
+				<code>import * as styles from './button.css';</code>
 				<code>&lt;button className={styles.<mark>button</mark>}&gt;</code>
 				<code>	Кнопка</code>
 				<code>&lt;/button&gt;</code>
@@ -931,10 +931,17 @@
 	<section class="slide" id="team5">
 		<h2>Планы на будущее</h2>
 		<ul class="items">
-			<li>серверный рендеринг приложений</li>
-			<li class="next">open source?</li>
+			<li>интеграция с мобильной платформой</li>
+			<li class="next">Open Source?</li>
 			<li class="next">отказ от IE8</li>
 		</ul>
+	</section>
+	<section class="slide">
+		<h2>Александра Воробьева</h2>
+		<div class="items">
+			<div>@shura_sparrow</div>
+			<div>shura.sparrow@gmail.com</div>
+		</div>
 	</section>
 	<!--
 		To hide progress bar from entire presentation
