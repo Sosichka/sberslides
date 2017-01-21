@@ -479,69 +479,8 @@
 			}
 		</style>
 	</section>
-	<section class="slide" id="app">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code>&lt;UFSProvider&gt;</code>
-        		<code>	&lt;Workspace&gt;</code>
-				<code>		&lt;AppContainer&gt;</code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Storе</h2>
-		<ul class="items">
-			<li>workspace&nbsp;&mdash; state рабочего места</li>
-			<li class="next">appContainer&nbsp;&mdash; для компонента AppContainer</li>
-			<li class="next">app&nbsp;&mdash; state приложений, загруженных в AppContainer</li>
-		</ul>
-	</section>
 	<section class="slide white">
 		<img src="pictures/rm.png" class="cover height" alt="RM">
-	</section>
-	<section class="slide white">
-		<img src="pictures/rm_show.png" class="cover height" alt="RM">
-	</section>
-	<section class="slide" id="app2">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code>&lt;UFSProvider&gt; - создает Store на странице</code>
-        		<code class="comment">	&lt;Workspace&gt; </code>
-				<code class="comment">		&lt;AppContainer&gt; </code>
-		</pre>
-	</section>
-
-	<section class="slide">
-		<h2>&lt;Workspace&gt;</h2>
-		<ul class="items">
-			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
-			<li class="next">включает в себя &laquo;обвязку&raquo; приложения</li>
-			<li class="next">содержит в себе <code>&lt;AppContainer&gt;</code></li>
-		</ul>
-	</section>
-	<section class="slide">
-		<h2>&lt;AppContainer&gt;</h2>
-		<ul class="items">
-			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
-			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки приложений по url</li>
-			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
-		</ul>
-	</section>
-	<section class="slide">
-		<h2>loadUrl</h2>
-		<pre>
-			<code>export default url => new Promise(</code>
-			<code>	resolve => <mark>System.import(url)</mark></code>
-			<code> 		.then(data => resolve(data['default'])));</code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Приложение</h2>
-		<ul class="items">
-			<li>js-файл</li>
-			<li class="next">может иметь статическое свойство <mark>reducer</mark></li>
-			<li class="next"><mark>state</mark> приложения будет доступен в <mark>state.app</mark></li>
-			<li class="next">в любой момент может вызвать <mark>openApp</mark></li>
-		</ul>
 	</section>
 	<section class="slide" id="css">
 		<h2>CSS</h2>
