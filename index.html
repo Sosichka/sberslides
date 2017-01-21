@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Сбертехнологии фронтенда</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,13 +46,17 @@
 			opacity: 0.9;
 		}
 		.slide .cover-title {
-			color: #fff
+			color: #fff;
+			font-size: 5rem;
 		}
 		.big-title {
 			font-size: 3rem;
 		}
 		.centered-title {
 			text-align: center;
+		}
+		.top-title {
+			margin-top: -53px;
 		}
 	</style>
 </head>
@@ -61,9 +65,9 @@
 		<h1>Сбертехнологии фронтенда</h1>
 		<p>Александра Воробьева</p>
 	</header>
-	<section class="slide" id="splash">
+	<section class="slide white" id="splash">
 		<h2 class="centered-picture vertical-centered cover-title">Сбертехнологии<br> фронтенда</h2>
-		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="">
+		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="">
 		<style>
 			#splash h2 {
 				text-align: center;
@@ -71,7 +75,7 @@
 			}
 		</style>
 	</section>
-	<section class="slide" id="cover">
+	<section class="slide white" id="cover">
 		<img src="pictures/efs.jpg" class="efs_logo" alt="Единая фронтальная система">
 		<h2>Единая фронтальная система (ЕФС)</h2>
 		<style type="text/css">
@@ -90,31 +94,33 @@
 	<section class="slide" id="front">
 		<h2>Фронтальные системы</h2>
 		<ol class="items">
-			<li>Интернет банк&nbsp;&mdash; Сбербанк Онлайн</li>
-			<li class="next">Банкоматы и терминалы</li>
-			<li class="next">Интерфейсы оператора в отделениях и <span class="nowrap">call-центрах</span></li>
+			<li>интернет банк&nbsp;&mdash; Сбербанк Онлайн</li>
+			<li class="next">банкоматы и терминалы</li>
+			<li class="next">интерфейсы оператора в отделениях и <span class="nowrap">call-центрах</span></li>
 		</ol>
 	</section>
 	<section class="slide" id="purpose">
 		<h2>Задачи разработки ЕФС</h2>
 		<ul class="items">
-			<li>Надежность</li>
-			<li class="next">Безопасность</li>
-			<li class="next">Отказоустойчивость&nbsp;&mdash; доступность <mark class="important-number">99.99%</mark> времени,<br> время отказа&nbsp;&mdash; <mark class="important-number">52&nbsp;минуты</mark> в&nbsp;год</li>
+			<li>надежность</li>
+			<li class="next">безопасность</li>
+			<li class="next">отказоустойчивость&nbsp;&mdash; доступность <mark class="important-number">99.99%</mark> времени,<br> время отказа&nbsp;&mdash; <mark class="important-number">52&nbsp;минуты</mark> в&nbsp;год</li>
 		</ul>
 	</section>
 	<section class="slide" id="purpose2">
 		<h2>Задачи разработки ЕФС</h2>
 		<ul class="items">
-			<li>Удобство для разных пользователей</li>
-			<li class="next">Быстрота работы и внедрения (time-to-market)</li>
+			<li>удобство для разных пользователей</li>
+			<li class="next">быстрота работы и внедрения (time-to-market)</li>
 		</ul>
 	</section>
 	<section class="slide" id="purpose3">
 		<h2>Снижение времени внедрения продукта</h2>
 		<div class="time-to-market">1 год
-			<span class="arrow">&rarr;</span>
-			<mark class="important-number">1 месяц</mark>
+			<span class="next">
+				<span class="arrow">&rarr;</span>
+				<mark class="important-number">1 месяц</mark>
+			</span>
 		</div>
 		<style type="text/css">
 			.time-to-market {
@@ -131,7 +137,7 @@
 			<span class="important-number">1</span> год</div>
 		<div class="fact next">
 			<img class="icon" src="pictures/about_head.svg" alt="" />
-			<span class="important-number">~800</span> человек
+			<span class="important-number">~1000</span> человек
 		</div>
 		<div class="fact next">
 			<img class="icon" src="pictures/about_lauch.svg" alt="" />
@@ -155,8 +161,7 @@
 	</section>
 	<section class="slide" id="frontend">
 		<h2>Фронтенд ЕФС</h2>
-		<div class="info"><span class="important-number">~800</span> человек</div>
-		<div class="double next">
+		<div class="double">
 			<div class="column">
 				<img class="icon" src="pictures/frontend_ui_team.svg" alt="" />
 				<h3 class="important-number">Команда платформы</h3>
@@ -176,7 +181,7 @@
 		</div>
 		<style type="text/css">
 			#frontend .icon {
-				width: 40%;
+				width: 50%;
 			}
 			#frontend .double {
 				position: relative;
@@ -193,7 +198,7 @@
 				font-size: 2rem;
 			}
 			#frontend .applied {
-				margin-top: 3.15rem;
+				margin-top: 4rem;
 			}
 			#frontend .arrow {
 				position: absolute;
@@ -209,36 +214,49 @@
 			}
 		</style>
 	</section>
-	<section class="slide" id="framework">
+	<section class="slide white" id="framework">
 		<h2 class="vertical-centered cover-title">Библиотека<br> <span class="nowrap">ui-компонентов</span></h2>
-		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="Technologies">
 	</section>
 	<section class="slide" id="include_1">
-		<h2>Контроллы</h2>
-		<img src="pictures/include_controls.svg" class="framework_screen" alt="Контроллы">
+		<h2 class="top-title">Контроллы</h2>
+		<img src="pictures/include_controls.svg" class="cover" alt="Контроллы">
 	</section>
 	<section class="slide" id="include_2">
 		<h2>Способы вывода информации</h2>
-		<img src="pictures/include_info.svg" class="widescreen" alt="Способы вывода информации">
+		<img src="pictures/include_info.svg" class="cover" alt="Способы вывода информации">
 	</section>
 	<section class="slide" id="include_3">
-		<h2>Сетка</h2>
-		<img src="pictures/include_cell.svg" class="framework_screen" alt="Сетка">
+		<h2>Способы вывода информации</h2>
+		<img src="pictures/include_info_2.svg" class="cover" alt="Способы вывода информации">
 	</section>
 	<section class="slide" id="include_4">
-		<h2>Загрузка фотографий и файлов</h2>
-		<img src="pictures/include_uploads.svg" class="widescreen" alt="Загрузка фотографий и файлов">
+		<h2 class="top-title">Сетка</h2>
+		<img src="pictures/include_cell.svg" class="cover" alt="Сетка">
+	</section>
+	<section class="slide" id="include_5">
+		<h2 class="top-title">Загрузка фотографий</h2>
+		<img src="pictures/include_uploads.svg" class="cover" alt="Загрузка фотографий">
 		<style type="text/css">
 			#include_4 h2 {
 				font-size: 2rem;
 			}
 		</style>
 	</section>
-	<section class="slide" id="include_5">
-		<h2>Компонент динамической подгрузки приложений</h2>
-		<img src="pictures/include_lauch.svg" class="framework_screen" alt="Компонент динамической загрузки приложений">
+	<section class="slide" id="include_6">
+		<h2 class="top-title">Загрузка файлов</h2>
+		<img src="pictures/include_files.svg" class="cover" alt="Загрузка файлов">
 		<style type="text/css">
-			#include_5 h2 {
+			#include_4 h2 {
+				font-size: 2rem;
+			}
+		</style>
+	</section>
+	<section class="slide" id="include_7">
+		<h2 class="top-title">Компонент динамической подгрузки приложений</h2>
+		<img src="pictures/include_lauch.svg" class="cover" alt="Компонент динамической загрузки приложений">
+		<style type="text/css">
+			#include_7 h2 {
 				font-size: 2rem;
 			}
 		</style>
@@ -283,9 +301,9 @@
 			}
 		</style>
 	</section>
-	<section class="slide" id="technologies">
+	<section class="slide white" id="technologies">
 		<h2 class="vertical-centered cover-title">Технологии</h2>
-		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="Technologies">
 	</section>
 	<section class="slide" id="framework-choice">
 		<img src="pictures/framework_react.png" class="framework_screen centered-picture" alt="React">
@@ -298,8 +316,8 @@
 	<section class="slide" id="react-choice">
 		<h2>React</h2>
 		<ul class="items">
-			<li>Компонентный подход для построения удобного API</li>
-			<li class="next">Читабельность кода, его дальнейшее переиспользование</li>
+			<li>компонентный подход для построения удобного API</li>
+			<li class="next">читабельность кода, его дальнейшее переиспользование</li>
 			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React.Native</li>
 		</ul>
 	</section>
@@ -323,20 +341,20 @@
 		<h2>Компонент библиотеки</h2>
 		<img src="pictures/comp-structure.png" class="component-img" alt="Component">
 		<div class="next items">
-			<span class="important-number">~ 50</span> компонентов
+			<span class="important-number">~ 70</span> компонентов
 		</div>
 		<style>
 			#component .component-img {
-				width: 10rem;
+				width: 22rem;
 			}
 			#component .items {
 				font-size: 4rem;
 			}
 		</style>
 	</section>
-	<section class="slide" id="product-problems">
+	<section class="slide white" id="product-problems">
 		<h2 class="vertical-centered cover-title">Проблемы производительности</h2>
-		<img src="pictures/abstract-bg.jpg" class="cover cover-opacity" alt="Technologies">
+		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="Technologies">
 	</section>
 	<section class="slide" id="dev-problems">
 		<h2>Как решали</h2>
@@ -348,12 +366,12 @@
 		<div class="small-code">
 			<pre>
 				<code>export interface State {</code>
-				<code>	<mark>value</mark>: string</code>
+				<code class="mark next">	value: string</code>
 				<code>}</code>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
-				<code>	onChange() = value => this.setState({ <mark>value</mark> })</code>
+				<code>	onChange() = value => this.setState({ value })</code>
 				<code>	render() {</code>
-					<code>		&lt;input value={this.state.<mark>value</mark> }
+				<code class="mark next">		&lt;input value={this.state.value}
 			onChange={this.onChange} /&gt;</code>
 				<code>	}</code>
 				<code>}</code>
@@ -367,10 +385,10 @@
 				<code>	value: string</code>
 				<code>}</code>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
-				<code>	<mark>onChange</mark>() = value => this.setState({ value })</code>
+				<code class="mark">	onChange() = value => this.setState({ value })</code>
 				<code>	render() {</code>
-					<code>		&lt;input value={this.state.value }
-			onChange={this.<mark>onChange</mark>} /&gt;</code>
+					<code>		&lt;input value={this.state.value}
+			onChange={this.onChange} /&gt;</code>
 				<code>	}</code>
 				<code>}</code>
 			</pre>
@@ -379,14 +397,14 @@
 	<section class="slide" id="dev-problems-4">
 		<div class="small-code">
 			<pre>
-				<code>export interface FormState {</code>
-				<code>	<mark>value</mark>: string</code>
+				<code class="mark next">export interface FormState {</code>
+				<code>	value: string</code>
 				<code>}</code>
 				<code>export class <mark class="important">Form</mark> extends React.Component&lt;Props, FormState&gt; {</code>
-						<code>	changeInput = value => this.setState({ <mark>value</mark> })</code>
+						<code>	changeInput = value => this.setState({ value })</code>
 
 						<code>	render() {</code>
-						<code>		&lt;Input value={this.state.value}
+						<code class="mark next">		&lt;Input value={this.state.value}
 			onChange={this.changeInput} /&gt;</code>
 					<code>	}</code>
 				<code>}</code>
@@ -398,7 +416,7 @@
 			<pre>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, {}&gt; {</code>
 					<code>	render() {</code>
-					<code>		&lt;input value={this.props.<mark>value</mark> }
+					<code>		&lt;input value={this.props.value }
 			onChange={this.props.onChange } /&gt;</code>
 					<code>	}</code>
 				<code>}</code>
@@ -415,10 +433,13 @@
 		<pre>
 			<code>shouldComponentUpdate(nextProps, nextState) {</code>
 			<code>	<span class="comment">// делаем поверхностную проверку свойств</span></code>
+			<code>	if (nextProps.value !== this.props.value) {</code>
+
+			<code>	}</code>
 			<code>}</code>
 		</pre>
 		<div class="next">
-			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>
+			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark> - передаем другой объект
 		</div>
 	</section>
 	<section class="slide" id="dev-problems-8">
@@ -431,18 +452,7 @@
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code> 	render() {</code>
-			<code>		&lt;button&gt; onClick={(e) => console.log(e);}></code>
-			<code>			Text</code>
-			<code>		&lt;/button&gt;</code>
-			<code>	}</code>
-			<code>}</code>
-		</pre>
-	</section>
-	<section class="slide" id="dev-problems-10">
-		<pre>
-			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
-			<code> 	render() {</code>
-			<code>		&lt;button&gt; onClick={<mark>(e) => console.log(e);</mark>}></code>
+			<code class="mark next">		&lt;button onClick={(e) => console.log(e);}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
@@ -454,65 +464,23 @@
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
 			<code>	<mark>onPost</mark> = e => console.log(e);</code>
 			<code>	render() {</code>
-			<code>		&lt;button&gt; onClick={<mark>this.onPost</mark>}></code>
+			<code>		&lt;button onClick={<mark>this.onPost</mark>}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
 			<code>}</code>
 		</pre>
 	</section>
-	<section class="slide" id="dev-problems-12">
-		<h2>Как решали</h2>
-		<ul class="items">
-			<li>используем <mark class="important-number">Redux</mark> для контроля <code>state</code> приложения</li>
-		</ul>
+	<section class="slide" id="app1">
+		<img src="pictures/redux.png" class="centered-picture vertical-centered" alt="REDUX">
+		<style>
+			#app1 .centered-picture {
+				width: 80%;
+			}
+		</style>
 	</section>
-	<section class="slide" id="app">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code>&lt;UFSProvider&gt;</code>
-        		<code>	&lt;Workspace&gt;</code>
-				<code>		&lt;AppContainer&gt;</code>
-		</pre>
-	</section>
-	<section class="slide" id="app2">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code>&lt;UFSProvider&gt; - создает Store на странице</code>
-        		<code class="comment">	&lt;Workspace&gt; </code>
-				<code class="comment">		&lt;AppContainer&gt; </code>
-		</pre>
-	</section>
-	<section class="slide" id="app3">
-		<h2>Стандартное приложение</h2>
-		<pre>
-			<code class="comment">&lt;UFSProvider&gt;</code>
-        		<code>	&lt;Workspace&gt; - рабочее место приложения</code>
-				<code class="comment">		&lt;AppContainer&gt; </code>
-		</pre>
-	</section>
-	<section class="slide" id="app4">
-		<h2>Рабочее место</h2>
-		<ul class="items">
-			<li>подключается к Store путем передачи свойства reducer в <code>&lt;UFSProvider&gt;</code></li>
-			<li class="next">включает в себя &laquo;обвязку&raquo; приложения</li>
-			<li class="next">содержит в себе <code>&lt;AppContainer&gt;</code></li>
-		</ul>
-	</section>
-	<section class="slide" id="app5">
-		<h2>AppContainer</h2>
-		<ul class="items">
-			<li><mark>defaultUrl</mark> - URL приложения по умолчанию</li>
-			<li class="next"><mark>loadUrl</mark> - функция для асинхронной загрузки компонентов по url</li>
-			<li class="next"><mark>defaultData</mark> - данные приложения по умолчанию</li>
-		</ul>
-	</section>
-	<section class="slide" id="app6">
-		<h2>AppContainer</h2>
-		<ul class="items">
-			<li>Приложение - js-файл</li>
-			<li class="next">подгрузка нового приложения - метод <code>openApp('file_address')</code></li>
-		</ul>
+	<section class="slide white">
+		<img src="pictures/rm.png" class="cover height" alt="RM">
 	</section>
 	<section class="slide" id="css">
 		<h2>CSS</h2>
@@ -537,23 +505,25 @@
 	<section class="slide" id="postcss">
 		<h2>Postcss</h2>
 		<ul class="items">
-			<li>Быстрота сборки</li>
-			<li class="next">Быстро развивается и поддерживается community</li>
-			<li class="next">Хотелось попробовать что-то новое</li>
+			<li>скорость сборки</li>
+			<li class="next">быстро развивается и поддерживается community</li>
+			<li class="next">хотелось попробовать что-то новое</li>
 		</ul>
 	</section>
 	<section class="slide" id="cssmodules">
-		<h2>СssModules</h2>
+		<h2>CSS Modules</h2>
 		<ul class="items">
-			<li>Стили разных компонент начали перекрывать друг друга</li>
+			<li>стили разных компонент начали перекрывать друг друга</li>
 			<li class="next">2 разных приложения в рамках одной страницы</li>
 		</ul>
 	</section>
 	<section class="slide" id="cssmodules2">
 		<h2>Плагины для PostCSS</h2>
 		<ol class="items">
-			<li>pnested</li>
-			<li>autoprefixer</li>
+			<li><a href="https://github.com/postcss/postcss-nested">nested</a></li>
+			<li><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></li>
+			<li><a href="https://github.com/postcss/postcss-import">import</a></li>
+			<li><a href="https://github.com/postcss/postcss-simple-vars">simpleVars</a></li>
 		</ol>
 		<img src="pictures/cssmodules-dragon.png" alt="CSS Modules">
 		<style>
@@ -565,21 +535,19 @@
 		</style>
 	</section>
 	<section class="slide" id="css-example">
-		<div class="column">
-			<h2>css</h2>
-			<pre>
-				<code><mark>.button</mark> {</code>
-				<code>	color: #FFF;</code>
-				<code>	background: #F00</code>
-				<code>}</code>
-			</pre>
-		</div>
+		<h2>button.css</h2>
+		<pre>
+			<code><mark>.button</mark> {</code>
+			<code>	color: #FFF;</code>
+			<code>	background: #F00</code>
+			<code>}</code>
+		</pre>
 	</section>
 	<section class="slide" id="css-example2">
 		<div class="column">
-			<h2>.tsx</h2>
+			<h2>button.tsx</h2>
 			<pre>
-				<code>import * as styles from './Button.css';</code>
+				<code>import * as styles from './button.css';</code>
 				<code>&lt;button className={styles.<mark>button</mark>}&gt;</code>
 				<code>	Кнопка</code>
 				<code>&lt;/button&gt;</code>
@@ -588,7 +556,7 @@
 	</section>
 	<section class="slide" id="css-dts">
 		<h2 class="vertical-centered">
-			TS &rarr; CSSModules &rarr; d.ts
+			TS &rarr; CSS Modules &rarr; d.ts
 		</h2>
 		<style>
 			#css-dts h2 {
@@ -598,15 +566,31 @@
 			}
 		</style>
 	</section>
+	<!--<section class="slide">-->
+		<!--<h2>Вложенность компонентов</h2>-->
+		<!--<pre>-->
+			<!--<code>&lt;TabSelector&gt;</code>-->
+			<!--<code>	&lt;Button&gt;Наличные&lt;/Button&gt;</code>-->
+			<!--<code>	&lt;Button&gt;Карта&lt;/Button&gt;</code>-->
+			<!--<code>&lt;/TabSelector&gt;</code>-->
+		<!--</pre>-->
+	<!--</section>-->
+	<!--<section class="slide">-->
+		<!--<h2>TabSelector</h2>-->
+		<!--<img src="pictures/tabselector.svg" alt="">-->
+	<!--</section>-->
 	<section class="slide" id="webpack">
 		<h2>Сборка проекта</h2>
 		<img src="pictures/gulp.svg" class="gulp" alt="gulp">
 		<span class="plus">+</span>
-		<img src="pictures/webpack.png" class="webpack" alt="webpack">
+		<img src="pictures/webpack.svg" class="webpack" alt="webpack">
 		<style>
-			.gulp,
-			.webpack {
+			.gulp{
 				width: 10rem;
+				vertical-align: bottom;
+			}
+			.webpack {
+				width: 30rem;
 				vertical-align: bottom;
 			}
 			#webpack .plus {
@@ -621,7 +605,7 @@
 		<ul class="items">
 			<li>генерация документации и примеров</li>
 			<li class="next">генерация d.ts файлов для css</li>
-			<li class="next">запуск тестов</li>
+			<li class="next">запуск unit-тестов</li>
 		</ul>
 	</section>
 	<section class="slide" id="webpack_screen">
@@ -649,7 +633,16 @@
 	</section>
 	<section class="slide" id="docs">
 		<h2>Props API</h2>
-		<img src="pictures/webpack-api.png" class="widescreen" alt="API">
+		<pre>
+			<code>export interface Props {</code>
+			<code>	<span class="comment">/* значение, задаваемое в поле */</span></code>
+			<code>	value?: string;</code>
+			<br/>
+			<code>	<span class="comment">/* коллбек вызывается каждый раз при изменении поля*/</span></code>
+			<code>	onChange?: (value: string) => void;</code>
+			<code>}</code>
+		</pre>
+
 	</section>
 
 	<section class="slide" id="docs-seq">
@@ -764,17 +757,17 @@
 		<h2>CSS-тестирование</h2>
 		<div class="big-title">Gemini от Yandex</div>
 		<ul>
-			<li class="next">Регрессионное тестирование</li>
-			<li class="next">Поддержка IE8</li>
-			<li class="next">Простая прикрутка</li>
+			<li class="next">регрессионное тестирование</li>
+			<li class="next">поддержка IE8</li>
+			<li class="next">простая прикрутка</li>
 		</ul>
 	</section>
 	<section class="slide" id="gemini2">
-		<h2>CSS-тестирование</h2>
-		<img src="pictures/gemini.png" class="css-result" alt="Gemini">
+
+		<img src="pictures/gemini.png" class="cover" alt="Gemini">
 		<style>
 			#gemini2 .css-result {
-				width: 40%;
+				width: 70%;
 			}
 		</style>
 	</section>
@@ -802,7 +795,7 @@
 		<h2>Deploy</h2>
 		<ul class="items">
 			<li>библиотека поставляется в виде npm-пакета</li>
-			<li class="next">3 версии библиотеки</li>
+			<li class="next">4 версии библиотеки</li>
 			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sinopia</li>
 		</ul>
 
@@ -870,18 +863,24 @@
 	<section class="slide" id="team4">
 		<h2>Требования к кандидату</h2>
 		<ul class="items">
-			<li>Высшее профильное образование</li>
-			<li class="next">Знание javascript</li>
-			<li class="next">Знание css</li>
+			<li>высшее профильное образование</li>
+			<li class="next">знание JavaScript и CSS</li>
 		</ul>
 	</section>
 	<section class="slide" id="team5">
 		<h2>Планы на будущее</h2>
 		<ul class="items">
-			<li>серверный рендеринг приложений</li>
-			<li class="next">open source?</li>
+			<li>интеграция с мобильной платформой</li>
+			<li class="next">Open Source?</li>
 			<li class="next">отказ от IE8</li>
 		</ul>
+	</section>
+	<section class="slide">
+		<h2>Александра Воробьева</h2>
+		<div class="items">
+			<div>@shura_sparrow</div>
+			<div>shura.sparrow@gmail.com</div>
+		</div>
 	</section>
 	<!--
 		To hide progress bar from entire presentation

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="579px" height="402px" viewBox="0 0 579 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="500" height="210" rx="6"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="10" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100000001 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="502" height="212">
+            <rect x="-1" y="-1" width="502" height="212" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="460" height="124" rx="3"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="462" height="126">
+            <rect x="-1" y="-1" width="462" height="126" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#E5E5E7" offset="0%"></stop>
+            <stop stop-color="#F3F4F4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.97714185e-15,19.0001062 C1.97714185e-15,17.895478 1.97714185e-15,16.1099416 1.97714185e-15,14.9998938 L1.97714185e-15,3.00012623 C1.97714185e-15,1.34320226 1.33760056,0 2.99119347,0 L276.008807,0 C277.660797,0 279,1.33396149 279,3.00012623 L279,17 L279,30.9998738 C279,32.6567977 277.662399,34 276.008807,34 L2.99119347,34 C1.33920293,34 1.97714185e-15,32.6660385 1.97714185e-15,30.9998738 L1.97714185e-15,19.0001062 Z" id="path-9"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100000001 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0" dy="-5" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter3" in2="SourceAlpha" operator="out" result="shadowBlurOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="279" height="34" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+    </defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="Примеры-использования-Copy" transform="translate(42.000000, 156.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-2-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#CCCCCC" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-3" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 66.000000)">
+                        <g id="Group">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <g id="Текстовое-поле">
+                                <use fill="#D6F4C9" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <use stroke="#3FC33E" mask="url(#mask-7)" stroke-width="2" stroke-dasharray="6,5" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                        <g id="Group-2" transform="translate(48.000000, 19.000000)">
+                            <g id="Стандартная-кнопка" transform="translate(43.000000, 42.000000)">
+                                <g id="Rectangle-1">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                    <use stroke="#929292" mask="url(#mask-11)" stroke-width="2" fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                                </g>
+                                <text id="Выбрать-файлы-на-дис" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
+                                    <tspan x="40" y="20">Выбрать файлы на диске</tspan>
+                                </text>
+                            </g>
+                            <text id="Вы-можете-перетащить" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" fill="#000000">
+                                <tspan x="0" y="16">Вы можете перетащить файлы в это поле или</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <text id="Загрузка-файлов" mask="url(#mask-2)" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" fill="#000000">
+                    <tspan x="18" y="38">Загрузка файлов</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

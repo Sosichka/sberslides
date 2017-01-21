@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="926px" height="707px" viewBox="0 0 926 707" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="926px" height="848px" viewBox="0 0 926 848" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>Desktop</title>
     <desc>Created with Sketch.</desc>
@@ -384,7 +384,7 @@
         <mask id="mask-74" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129" height="34" fill="white">
             <use xlink:href="#path-72"></use>
         </mask>
-        <rect id="path-75" x="464" y="441" width="225" height="52" rx="3"></rect>
+        <rect id="path-75" x="460" y="602" width="225" height="52" rx="3"></rect>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-76">
             <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
@@ -472,7 +472,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop">
-            <g id="Выпадающий-список" transform="translate(33.000000, 31.000000)">
+            <g id="Выпадающий-список" transform="translate(29.000000, 192.000000)">
                 <g id="Текстовое-поле">
                     <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
                     <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
@@ -487,7 +487,7 @@
                 <path d="M1.45340502,76.5 L253.626489,76.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
                 <path d="M1.45340502,74.5 L253.626489,74.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
             </g>
-            <g id="Развернутый-список" transform="translate(337.000000, 31.000000)">
+            <g id="Развернутый-список" transform="translate(333.000000, 192.000000)">
                 <g id="Текстовое-поле">
                     <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
@@ -518,7 +518,7 @@
                 <path d="M1.45340502,131.5 L253.626489,131.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
                 <path d="M1.45340502,184.5 L253.626489,184.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
             </g>
-            <g id="Раскрытый-список" transform="translate(641.000000, 31.000000)">
+            <g id="Раскрытый-список" transform="translate(637.000000, 192.000000)">
                 <g id="Мини-список" transform="translate(1.000000, 80.000000)">
                     <g id="Текстовое-поле">
                         <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
@@ -560,7 +560,7 @@
                     <tspan x="0" y="13">Город</tspan>
                 </text>
             </g>
-            <g id="Шаг-2" transform="translate(33.000000, 331.000000)">
+            <g id="Шаг-2" transform="translate(29.000000, 492.000000)">
                 <g id="Group-8" transform="translate(0.000000, 79.000000)">
                     <g id="Текстовое-поле">
                         <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
@@ -619,30 +619,30 @@
                             <tspan x="0" y="147">12</tspan>
                         </text>
                     </g>
-                    <g id="/2" transform="translate(131.000000, 54.000000)" font-weight="normal">
-                        <text id="Февраль" font-family="PTSans-Narrow, PT Sans Narrow" font-size="20" font-style="condensed" line-spacing="43" fill="#000000">
+                    <g id="/2" transform="translate(131.000000, 59.000000)" font-weight="normal">
+                        <text id="Февраль" font-family="PTSans-Narrow, PT Sans Narrow" font-size="20" font-style="condensed" line-spacing="33" fill="#000000">
                             <tspan x="23" y="18">Февраль</tspan>
                         </text>
                         <text id="Май" font-family="PTSans-Narrow, PT Sans Narrow" font-size="20" font-style="condensed" line-spacing="43" fill="#000000">
-                            <tspan x="23" y="58">Май</tspan>
+                            <tspan x="23" y="53">Май</tspan>
                         </text>
                         <text id="Август" font-family="PTSans-Narrow, PT Sans Narrow" font-size="20" font-style="condensed" line-spacing="43" fill="#000000">
-                            <tspan x="23" y="98">Август</tspan>
+                            <tspan x="23" y="93">Август</tspan>
                         </text>
                         <text id="Ноябрь" font-family="PTSans-Narrow, PT Sans Narrow" font-size="20" font-style="condensed" line-spacing="43" fill="#000000">
-                            <tspan x="23" y="138">Ноябрь</tspan>
+                            <tspan x="23" y="133">Ноябрь</tspan>
                         </text>
                         <text id="02" font-family="PTSans-Regular, PT Sans" font-size="16" line-spacing="18" fill="#929292">
-                            <tspan x="0" y="28">02</tspan>
+                            <tspan x="0" y="23">02</tspan>
                         </text>
                         <text id="05" font-family="PTSans-Regular, PT Sans" font-size="16" line-spacing="18" fill="#929292">
-                            <tspan x="0" y="68">05</tspan>
+                            <tspan x="0" y="63">05</tspan>
                         </text>
                         <text id="08" font-family="PTSans-Regular, PT Sans" font-size="16" line-spacing="18" fill="#929292">
-                            <tspan x="0" y="108">08</tspan>
+                            <tspan x="0" y="103">08</tspan>
                         </text>
                         <text id="11" font-family="PTSans-Regular, PT Sans" font-size="16" line-spacing="18" fill="#929292">
-                            <tspan x="0" y="148">11</tspan>
+                            <tspan x="0" y="143">11</tspan>
                         </text>
                     </g>
                     <g id="Group-12" transform="translate(95.000000, 20.000000)" stroke-width="2" stroke="#000000">
@@ -683,7 +683,7 @@
                     <use id="Rectangle-51-Copy-5" mask="url(#mask-44)" stroke-width="2" xlink:href="#path-43"></use>
                 </g>
             </g>
-            <g id="Кнопка-выполнения-операции" transform="translate(33.000000, 151.000000)">
+            <g id="Кнопка-выполнения-операции" transform="translate(29.000000, 312.000000)">
                 <g id="Rectangle-1">
                     <use fill="black" fill-opacity="1" filter="url(#filter-47)" xlink:href="#path-46"></use>
                     <use fill="url(#linearGradient-45)" fill-rule="evenodd" xlink:href="#path-46"></use>
@@ -692,7 +692,7 @@
                     <tspan x="40" y="33">Выполнить</tspan>
                 </text>
             </g>
-            <g id="Чекбокс-вкл" transform="translate(33.000000, 257.000000)">
+            <g id="Чекбокс-вкл" transform="translate(29.000000, 418.000000)">
                 <g id="Чекбокс-Актив">
                     <use fill="url(#linearGradient-13)" fill-rule="evenodd" xlink:href="#path-48"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-49)" xlink:href="#path-48"></use>
@@ -700,7 +700,7 @@
                 </g>
                 <polyline id="Галка-Актив" stroke="#FFFFFF" stroke-width="3" transform="translate(11.000000, 11.000000) rotate(-270.000000) translate(-11.000000, -11.000000) " points="5.99999995 4.00000005 16 13 11 18"></polyline>
             </g>
-            <g id="Радио-вкл" transform="translate(64.000000, 258.000000)">
+            <g id="Радио-вкл" transform="translate(60.000000, 419.000000)">
                 <g id="Радио-Актив">
                     <use fill="url(#linearGradient-13)" fill-rule="evenodd" xlink:href="#path-51"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-52)" xlink:href="#path-51"></use>
@@ -711,7 +711,7 @@
                     <use fill="url(#linearGradient-54)" fill-rule="evenodd" xlink:href="#path-55"></use>
                 </g>
             </g>
-            <g id="Выкл-фокус" transform="translate(142.000000, 257.000000)">
+            <g id="Выкл-фокус" transform="translate(138.000000, 418.000000)">
                 <g id="Rectangle-97">
                     <use fill="url(#linearGradient-13)" fill-rule="evenodd" xlink:href="#path-57"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-58)" xlink:href="#path-57"></use>
@@ -723,7 +723,7 @@
                     <use stroke="#3FC33E" mask="url(#mask-62)" stroke-width="2" xlink:href="#path-60"></use>
                 </g>
             </g>
-            <g id="Вкл-фокус" transform="translate(192.000000, 257.000000)">
+            <g id="Вкл-фокус" transform="translate(188.000000, 418.000000)">
                 <g id="Rectangle-97">
                     <use fill="url(#linearGradient-13)" fill-rule="evenodd" xlink:href="#path-63"></use>
                     <use fill="black" fill-opacity="1" filter="url(#filter-64)" xlink:href="#path-63"></use>
@@ -735,7 +735,7 @@
                     <use stroke="#3FC33E" mask="url(#mask-68)" stroke-width="2" xlink:href="#path-66"></use>
                 </g>
             </g>
-            <g id="Стандартная-кнопка" transform="translate(312.000000, 314.000000)">
+            <g id="Стандартная-кнопка" transform="translate(308.000000, 475.000000)">
                 <g id="Rectangle-1">
                     <use fill="black" fill-opacity="1" filter="url(#filter-70)" xlink:href="#path-69"></use>
                     <use stroke="#929292" mask="url(#mask-71)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-69"></use>
@@ -744,7 +744,7 @@
                     <tspan x="41.213" y="22">Назад</tspan>
                 </text>
             </g>
-            <g id="Стандартная-кнопка" transform="translate(462.000000, 314.000000)">
+            <g id="Стандартная-кнопка" transform="translate(458.000000, 475.000000)">
                 <g id="Rectangle-1">
                     <use fill="black" fill-opacity="1" filter="url(#filter-73)" xlink:href="#path-72"></use>
                     <use stroke="#929292" mask="url(#mask-74)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-72"></use>
@@ -758,12 +758,12 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-76)" xlink:href="#path-75"></use>
             </g>
             <text id="20-000" font-family="PTSans-Narrow, PT Sans Narrow" font-size="36" font-style="condensed" font-weight="normal" line-spacing="43" fill="#FFFFFF">
-                <tspan x="590" y="475">20 000</tspan>
+                <tspan x="586" y="636">20 000</tspan>
             </text>
             <text id="Сумма" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" line-spacing="16" fill="#919191">
-                <tspan x="649" y="428">Сумма</tspan>
+                <tspan x="645" y="589">Сумма</tspan>
             </text>
-            <g id="Group-3" transform="translate(438.000000, 530.000000)">
+            <g id="Group-3" transform="translate(434.000000, 691.000000)">
                 <g id="Group">
                     <mask id="mask-79" fill="white">
                         <use xlink:href="#path-77"></use>
@@ -787,14 +787,14 @@
                     </text>
                 </g>
             </g>
-            <g id="Мини-кнопка" transform="translate(802.000000, 409.000000)">
+            <g id="Мини-кнопка" transform="translate(798.000000, 570.000000)">
                 <g id="Rectangle-1">
                     <use fill="black" fill-opacity="1" filter="url(#filter-85)" xlink:href="#path-84"></use>
                     <use stroke="#929292" mask="url(#mask-86)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-84"></use>
                 </g>
                 <polygon id="Location" fill="#030303" points="9 17.1111111 25 10 17.8888889 26 17.8888889 17.1111111"></polygon>
             </g>
-            <g id="Мини-кнопка" transform="translate(862.000000, 409.000000)">
+            <g id="Мини-кнопка" transform="translate(858.000000, 570.000000)">
                 <g id="Rectangle-1">
                     <use fill="black" fill-opacity="1" filter="url(#filter-88)" xlink:href="#path-87"></use>
                     <use stroke="#929292" mask="url(#mask-89)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-87"></use>
