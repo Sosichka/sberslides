@@ -94,7 +94,7 @@
 	<section class="slide" id="front">
 		<h2>Фронтальные системы</h2>
 		<ol class="items">
-			<li>интернет банк&nbsp;&mdash; Сбербанк Онлайн</li>
+			<li>интернет-банк&nbsp;&mdash; Сбербанк Онлайн</li>
 			<li class="next">банкоматы и терминалы</li>
 			<li class="next">интерфейсы оператора в отделениях и <span class="nowrap">call-центрах</span></li>
 		</ol>
@@ -165,7 +165,7 @@
 			<div class="column">
 				<img class="icon" src="pictures/frontend_ui_team.svg" alt="" />
 				<h3 class="important-number">Команда платформы</h3>
-				<div>библиотека ui-компонентов</div>
+				<div>библиотека UI-компонентов</div>
 			</div>
 			<div class="column">
 				<img class="icon applied" src="pictures/frontend_applied.svg" alt="" />
@@ -215,7 +215,7 @@
 		</style>
 	</section>
 	<section class="slide white" id="framework">
-		<h2 class="vertical-centered cover-title">Библиотека<br> <span class="nowrap">ui-компонентов</span></h2>
+		<h2 class="vertical-centered cover-title">Библиотека<br> <span class="nowrap">UI-компонентов</span></h2>
 		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="Technologies">
 	</section>
 	<section class="slide" id="include_1">
@@ -280,9 +280,9 @@
 		<style type="text/css">
 			#versions_cry .cry {
 				position: absolute;
-				left: 0;
+				right: 0;
 				bottom: 0;
-				width: 70%;
+				width: 48%;
 			}
 		</style>
 	</section>
@@ -318,7 +318,7 @@
 		<ul class="items">
 			<li>компонентный подход для построения удобного API</li>
 			<li class="next">читабельность кода, его дальнейшее переиспользование</li>
-			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React.Native</li>
+			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React&nbsp;Native</li>
 		</ul>
 	</section>
 	<section class="slide" id="type-choice">
@@ -330,7 +330,7 @@
 		</style>
 	</section>
 	<section class="slide" id="typescript-choice">
-		<h2>Typescript</h2>
+		<h2>TypeScript</h2>
 		<ul class="items">
 			<li>строгая типизация (тип <code>any</code> почти не используем)</li>
 			<li class="next">избегаем &laquo;глупых&raquo; ошибок при разработке</li>
@@ -482,39 +482,34 @@
 	<section class="slide white">
 		<img src="pictures/rm.png" class="cover height" alt="RM">
 	</section>
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">CSS</h2>
+		<img src="pictures/orange-bg.jpg" class="cover width" alt="">
+	</section>
 	<section class="slide" id="css">
 		<h2>CSS</h2>
-		<img class="postcss" src="pictures/postcss.png" alt="Postcss">
+		<img class="postcss" src="pictures/postcss.svg" alt="PostCss">
 		<span class="plus"> + </span>
 		<img class="cssmodules" src="pictures/css-modules.png" alt="CssModules">
 		<style type="text/css">
-			#css .postcss,
-			#css .cssmodules {
+			#css .cssmodules,
+			#css .postcss {
 				width: 40%;
-				vertical-align: bottom;
-			}
-			#css .cssmodules {
-				margin-left: 1rem
+				vertical-align: middle;
 			}
 			#css .plus {
 				font-size: 5rem;
-				padding: 0 1rem;
+				padding: 0 2rem 0 2.5rem;
+				vertical-align: middle;
 			}
 		</style>
 	</section>
 	<section class="slide" id="postcss">
-		<h2>Postcss</h2>
+		<h2>PostCSS</h2>
 		<ul class="items">
 			<li>скорость сборки</li>
 			<li class="next">быстро развивается и поддерживается community</li>
 			<li class="next">хотелось попробовать что-то новое</li>
-		</ul>
-	</section>
-	<section class="slide" id="cssmodules">
-		<h2>CSS Modules</h2>
-		<ul class="items">
-			<li>стили разных компонент начали перекрывать друг друга</li>
-			<li class="next">2 разных приложения в рамках одной страницы</li>
 		</ul>
 	</section>
 	<section class="slide" id="cssmodules2">
@@ -533,6 +528,13 @@
 				bottom: 4.5rem;
 			}
 		</style>
+	</section>
+	<section class="slide" id="cssmodules">
+		<h2>CSS Modules</h2>
+		<ul class="items">
+			<li>стили разных компонент начали перекрывать друг друга</li>
+			<li class="next">2 разных приложения в рамках одной страницы</li>
+		</ul>
 	</section>
 	<section class="slide" id="css-example">
 		<h2>button.css</h2>
@@ -566,19 +568,10 @@
 			}
 		</style>
 	</section>
-	<!--<section class="slide">-->
-		<!--<h2>Вложенность компонентов</h2>-->
-		<!--<pre>-->
-			<!--<code>&lt;TabSelector&gt;</code>-->
-			<!--<code>	&lt;Button&gt;Наличные&lt;/Button&gt;</code>-->
-			<!--<code>	&lt;Button&gt;Карта&lt;/Button&gt;</code>-->
-			<!--<code>&lt;/TabSelector&gt;</code>-->
-		<!--</pre>-->
-	<!--</section>-->
-	<!--<section class="slide">-->
-		<!--<h2>TabSelector</h2>-->
-		<!--<img src="pictures/tabselector.svg" alt="">-->
-	<!--</section>-->
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">Сборка</h2>
+		<img src="pictures/orange-bg.jpg" class="cover width" alt="">
+	</section>
 	<section class="slide" id="webpack">
 		<h2>Сборка проекта</h2>
 		<img src="pictures/gulp.svg" class="gulp" alt="gulp">
@@ -587,16 +580,20 @@
 		<style>
 			.gulp{
 				width: 10rem;
-				vertical-align: bottom;
+				vertical-align: middle;
 			}
 			.webpack {
-				width: 30rem;
-				vertical-align: bottom;
+				width: 18rem;
+				vertical-align: middle;
+				position: relative;
+				top: 4rem;
 			}
 			#webpack .plus {
 				font-size: 5rem;
-				padding: 0 3rem;
-				vertical-align: bottom;
+				padding: 0 3rem 0 4rem;
+				vertical-align: middle;
+				position: relative;
+				top: 2rem
 			}
 		</style>
 	</section>
@@ -604,7 +601,7 @@
 		<h2>Gulp</h2>
 		<ul class="items">
 			<li>генерация документации и примеров</li>
-			<li class="next">генерация d.ts файлов для css</li>
+			<li class="next">генерация d.ts файлов для CSS</li>
 			<li class="next">запуск unit-тестов</li>
 		</ul>
 	</section>
@@ -618,18 +615,16 @@
 			}
 		</style>
 	</section>
-	<section class="slide">
+	<section class="slide" id="folder">
 		<h2>Сборка</h2>
 		<div>
-			<code>/dist</code> - папка сборки
-			<ul>
-				<li>fonts</li>
-				<li>images</li>
-				<li>src</li>
-				<li>bundle.js</li>
-				<li>ufs-ui.css</li>
-			</ul>
+			<img src="pictures/folder_webkit.png" alt="">
 		</div>
+		<style>
+			#folder img {
+				width: 50%;
+			}
+		</style>
 	</section>
 	<section class="slide" id="docs">
 		<h2>Props API</h2>
@@ -726,6 +721,10 @@
 			}
 		</style>
 	</section>
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">Тесты</h2>
+		<img src="pictures/orange-bg.jpg" class="cover width" alt="">
+	</section>
 	<section class="slide" id="testing">
 		<h2>Unit-тестирование</h2>
 		<div>
@@ -755,7 +754,7 @@
 	</section>
 	<section class="slide" id="gemini">
 		<h2>CSS-тестирование</h2>
-		<div class="big-title">Gemini от Yandex</div>
+		<div class="big-title">Gemini от Яндекса</div>
 		<ul>
 			<li class="next">регрессионное тестирование</li>
 			<li class="next">поддержка IE8</li>
@@ -792,13 +791,16 @@
 		</style>
 	</section>
 	<section class="slide" id="deploy">
-		<h2>Deploy</h2>
+		<h2>Деплой</h2>
 		<ul class="items">
 			<li>библиотека поставляется в виде npm-пакета</li>
 			<li class="next">4 версии библиотеки</li>
 			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sinopia</li>
 		</ul>
-
+	</section>
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">Команда</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover height" alt="">
 	</section>
 	<section class="slide" id="team">
 		<h2>Команда</h2>
@@ -867,6 +869,10 @@
 			<li class="next">знание JavaScript и CSS</li>
 		</ul>
 	</section>
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">Что дальше?</h2>
+		<img src="pictures/abstract-bg.jpg" class="cover height" alt="">
+	</section>
 	<section class="slide" id="team5">
 		<h2>Планы на будущее</h2>
 		<ul class="items">
@@ -878,8 +884,8 @@
 	<section class="slide">
 		<h2>Александра Воробьева</h2>
 		<div class="items">
-			<div>@shura_sparrow</div>
-			<div>shura.sparrow@gmail.com</div>
+			<div><a href="https://twitter.com/shura_sparrow">@shura_sparrow</a></div>
+			<div><a href="mailto:shura.sparrow@gmail.com">shura.sparrow@gmail.com</a></div>
 		</div>
 	</section>
 	<!--
