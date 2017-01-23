@@ -218,6 +218,24 @@
 		<h2 class="vertical-centered cover-title">Библиотека<br> <span class="nowrap">UI-компонентов</span></h2>
 		<img src="pictures/abstract-bg.jpg" class="cover height cover-opacity" alt="Technologies">
 	</section>
+	<section class="slide white" id="framework_ex">
+		<h2>Библиотеки UI</h2>
+		<ul>
+			<li><a href="http://www.material-ui.com/">Material-UI</a> от Google</li>
+			<li><a href="http://www.material-ui.com/">Electrode</a> от WalmartLabs</li>
+			<li>Лего&nbsp;&mdash; портальная библиотека  от Яндекса</li>
+			<li>Библиотеки Avito, Mail.ru, и.т.д.</li>
+		</ul>
+		<img src="pictures/lego.jpg" alt="" class="lego">
+		<style>
+			.lego {
+				position: absolute;
+				right: 2rem;
+				bottom: 2rem;
+				width: 40%;
+			}
+		</style>
+	</section>
 	<section class="slide" id="include_1">
 		<h2 class="top-title">Контроллы</h2>
 		<img src="pictures/include_controls.svg" class="cover" alt="Контроллы">
@@ -321,6 +339,22 @@
 			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React&nbsp;Native</li>
 		</ul>
 	</section>
+	<section class="slide" id="react-ie8">
+		<h2>React + IE8?</h2>
+		<ul>
+			<li class="next">React 0.14.0</li>
+			<li class="next"><a href="https://www.npmjs.com/package/es3ify-webpack-plugin">es3ify</a></li>
+		</ul>
+		<img src="pictures/challenge.png" class="challenge" alt="Challenge">
+		<style>
+			#react-ie8 .challenge {
+				position: absolute;
+				bottom: 0;
+				right: 2rem;
+				width: 50%;
+			}
+		</style>
+	</section>
 	<section class="slide" id="type-choice">
 		<img src="pictures/typescript_choice.png" class="framework_screen centered-picture" alt="Typecript">
 		<style type="text/css">
@@ -385,7 +419,7 @@
 				<code>	value: string</code>
 				<code>}</code>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
-				<code class="mark">	onChange() = value => this.setState({ value })</code>
+				<code class="mark">	onChange = value => this.setState({ value })</code>
 				<code>	render() {</code>
 					<code>		&lt;input value={this.state.value}
 			onChange={this.onChange} /&gt;</code>
@@ -439,7 +473,7 @@
 			<code>}</code>
 		</pre>
 		<div class="next">
-			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark> - передаем другой объект
+			Для свойств-объектов: паттерн <mark class="important-number">«immutable»</mark>&nbsp;&mdash; передаем другой объект
 		</div>
 	</section>
 	<section class="slide" id="dev-problems-8">
@@ -532,7 +566,7 @@
 	<section class="slide" id="cssmodules">
 		<h2>CSS Modules</h2>
 		<ul class="items">
-			<li>стили разных компонент начали перекрывать друг друга</li>
+			<li>стили разных компонентов начали перекрывать друг друга</li>
 			<li class="next">2 разных приложения в рамках одной страницы</li>
 		</ul>
 	</section>
@@ -762,7 +796,6 @@
 		</ul>
 	</section>
 	<section class="slide" id="gemini2">
-
 		<img src="pictures/gemini.png" class="cover" alt="Gemini">
 		<style>
 			#gemini2 .css-result {
@@ -770,13 +803,6 @@
 			}
 		</style>
 	</section>
-	<!--<section class="slide" id="gemini3">-->
-		<!--<h2>Проблемы</h2>-->
-		<!--<ul class="items">-->
-			<!--<li>важно окружение, в котором запускаешь тесты</li>-->
-			<!--<li>не смогли запустить тесты в 2-х браузерах<br> одновременно</li>-->
-		<!--</ul>-->
-	<!--</section>-->
 	<section class="slide" id="jenkins">
 		<h2>Непрерывная интеграция</h2>
 		<div class="jenkins">
@@ -789,6 +815,10 @@
 				text-align: center;
 			}
 		</style>
+	</section>
+	<section class="slide white">
+		<h2 class="centered-picture vertical-centered cover-title">Деплой</h2>
+		<img src="pictures/orange-bg.jpg" class="cover width" alt="">
 	</section>
 	<section class="slide" id="deploy">
 		<h2>Деплой</h2>
