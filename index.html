@@ -403,7 +403,7 @@
 				<code class="mark next">	value: string</code>
 				<code>}</code>
 				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
-				<code>	onChange() = value => this.setState({ value })</code>
+				<code>	onChange = value => this.setState({ value })</code>
 				<code>	render() {</code>
 				<code class="mark next">		&lt;input value={this.state.value}
 			onChange={this.onChange} /&gt;</code>
@@ -514,7 +514,7 @@
 		</style>
 	</section>
 	<section class="slide white">
-		<img src="pictures/rm.png" class="cover height" alt="RM">
+		<img src="pictures/rm.png" class="cover height width" alt="RM">
 	</section>
 	<section class="slide white">
 		<h2 class="centered-picture vertical-centered cover-title">CSS</h2>
@@ -918,10 +918,6 @@
 			<div><a href="mailto:shura.sparrow@gmail.com">shura.sparrow@gmail.com</a></div>
 		</div>
 	</section>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
 	<div class="progress"></div>
 	<script src="node_modules/shower-core/shower.min.js"></script>
 	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->

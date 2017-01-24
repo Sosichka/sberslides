@@ -338,7 +338,7 @@
             <rect x="19" y="-1" width="22" height="22" fill="white"></rect>
             <use xlink:href="#path-66" fill="black"></use>
         </mask>
-        <path d="M1.01388499,18.7236045 C0.453931773,17.771684 0.455664396,16.2253705 1.01388499,15.2763955 L8.48121524,2.58193409 C9.3200169,1.15597127 11.3476563,0 12.9962474,0 L127.003753,0 C128.658534,0 130,1.34331243 130,3.00235843 L130,30.9976416 C130,32.6557983 128.652344,34 127.003753,34 L12.9962474,34 C11.3414656,34 9.32052126,32.8448861 8.48121524,31.4180659 L1.01388499,18.7236045 Z" id="path-69"></path>
+        <path d="M1.12428416,18.7236045 C0.564810205,17.771684 0.566541346,16.2253705 1.12428416,15.2763955 L8.58522312,2.58193409 C9.42330685,1.15597127 11.4492107,5.68434189e-14 13.0963909,5.68434189e-14 L127.006317,5.68434189e-14 C128.659683,5.68434189e-14 130,1.34331243 130,3.00235843 L130,30.9976416 C130,32.6557983 128.653497,34 127.006317,34 L13.0963909,34 C11.4430254,34 9.42381078,32.8448861 8.58522312,31.4180659 L1.12428416,18.7236045 Z" id="path-69"></path>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-70">
             <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
@@ -358,7 +358,7 @@
                 <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
             </feMerge>
         </filter>
-        <mask id="mask-71" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129.40543" height="34" fill="white">
+        <mask id="mask-71" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="129" height="34" fill="white">
             <use xlink:href="#path-69"></use>
         </mask>
         <path d="M4.70208776e-15,19.0001062 C5.04836078e-15,17.895478 5.05005969e-15,16.1099416 4.70208776e-15,14.9998938 L9.40463778e-16,3.00012623 C4.21059976e-16,1.34320226 1.33642578,0 3.0011061,0 L115.998894,0 C117.656359,0 119.679479,1.15511386 120.518785,2.58193409 L129,17 L120.518785,31.4180659 C119.679983,32.8440287 117.663574,34 115.998894,34 L3.0011061,34 C1.34364097,34 4.18163225e-16,32.6660385 9.40463778e-16,30.9998738 L4.70208776e-15,19.0001062 Z" id="path-72"></path>
@@ -501,22 +501,22 @@
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
                     <use stroke="#3FC33E" mask="url(#mask-9)" stroke-width="2" xlink:href="#path-7"></use>
                 </g>
-                <polyline id="Path-9" stroke="#3FC33E" stroke-width="3" points="225 51.2478295 230.755432 57.0032617 240.758694 47"></polyline>
+                <polyline id="Path-9" stroke="#3FC33E" stroke-width="3" points="225 51.2464444 230.843563 57 241 47"></polyline>
                 <text id="Первый-вариант" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                    <tspan x="21" y="55">Первый вариант</tspan>
+                    <tspan x="21" y="57">Первый вариант</tspan>
                 </text>
                 <text id="Второй-вариант" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                    <tspan x="21" y="108">Второй вариант</tspan>
+                    <tspan x="21" y="110">Второй вариант</tspan>
                 </text>
                 <text id="Третий-вариант" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                    <tspan x="21" y="161">Третий вариант</tspan>
+                    <tspan x="21" y="163">Третий вариант</tspan>
                 </text>
                 <text id="Четвертый-вариант" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                    <tspan x="21" y="214">Четвертый вариант</tspan>
+                    <tspan x="21" y="216">Четвертый вариант</tspan>
                 </text>
-                <path d="M1.45340502,78.5 L253.626489,78.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
-                <path d="M1.45340502,131.5 L253.626489,131.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
-                <path d="M1.45340502,184.5 L253.626489,184.5" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
+                <path d="M1,79 L253,79" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
+                <path d="M1,132 L253,132" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
+                <path d="M1,185 L253,185" id="Line" stroke="#D6F4C9" stroke-linecap="square"></path>
             </g>
             <g id="Раскрытый-список" transform="translate(637.000000, 192.000000)">
                 <g id="Мини-список" transform="translate(1.000000, 80.000000)">
@@ -552,9 +552,9 @@
                     </g>
                     <polygon id="Location" fill="#000000" points="9 17.1111111 25 10 17.8888889 26 17.8888889 17.1111111"></polygon>
                 </g>
-                <path d="M50,35.5 L50,68.5" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M50,38 L50,71" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
                 <text id="Мо" font-family="PTSans-Narrow, PT Sans Narrow" font-size="36" font-style="condensed" font-weight="normal" line-spacing="43" fill="#FFFFFF">
-                    <tspan x="11" y="60">Мо</tspan>
+                    <tspan x="11" y="63">Мо</tspan>
                 </text>
                 <text id="Город" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" line-spacing="16" fill="#919191">
                     <tspan x="0" y="13">Город</tspan>
@@ -661,7 +661,7 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
                     </g>
                     <text id="мм.гггг" opacity="0.4" font-family="PTSans-Narrow, PT Sans Narrow" font-size="36" font-style="condensed" font-weight="normal" line-spacing="43" fill="#FFFFFF">
-                        <tspan x="9" y="34">мм.гггг</tspan>
+                        <tspan x="9" y="36">мм.гггг</tspan>
                     </text>
                     <path d="M10,10 L10,43" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
                 </g>
@@ -669,7 +669,7 @@
                     <tspan x="0" y="13">Месяц и год</tspan>
                 </text>
                 <g id="Норма-Copy" transform="translate(117.000000, 40.000000)" stroke="#FFFFFF">
-                    <polygon id="Path-4" points="18.5 0.5 18.5 19.5 0.5 19.5 0.5 0.5"></polygon>
+                    <polygon id="Path-4" points="19 1 19 20 1 20 1 1"></polygon>
                     <path d="M0.527777778,3.5 L18.4722222,3.5" id="Line" stroke-linecap="square"></path>
                     <use id="Rectangle-51-Copy-5" mask="url(#mask-26)" stroke-width="2" xlink:href="#path-25"></use>
                     <use id="Rectangle-51-Copy-9" mask="url(#mask-28)" stroke-width="2" xlink:href="#path-27"></use>
@@ -689,7 +689,7 @@
                     <use fill="url(#linearGradient-45)" fill-rule="evenodd" xlink:href="#path-46"></use>
                 </g>
                 <text id="Выполнить" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#FFFFFF">
-                    <tspan x="40" y="33">Выполнить</tspan>
+                    <tspan x="40" y="35">Выполнить</tspan>
                 </text>
             </g>
             <g id="Чекбокс-вкл" transform="translate(29.000000, 418.000000)">
@@ -750,7 +750,7 @@
                     <use stroke="#929292" mask="url(#mask-74)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-72"></use>
                 </g>
                 <text id="Далее" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" letter-spacing="0.200000003" fill="#000000">
-                    <tspan x="39.583" y="22">Далее</tspan>
+                    <tspan x="40.083" y="22">Далее</tspan>
                 </text>
             </g>
             <g id="Текстовое-поле">
@@ -758,7 +758,7 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-76)" xlink:href="#path-75"></use>
             </g>
             <text id="20-000" font-family="PTSans-Narrow, PT Sans Narrow" font-size="36" font-style="condensed" font-weight="normal" line-spacing="43" fill="#FFFFFF">
-                <tspan x="586" y="636">20 000</tspan>
+                <tspan x="586" y="640">20 000</tspan>
             </text>
             <text id="Сумма" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" line-spacing="16" fill="#919191">
                 <tspan x="645" y="589">Сумма</tspan>
@@ -779,7 +779,7 @@
                             <use stroke="#929292" mask="url(#mask-83)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-81"></use>
                         </g>
                         <text id="Выбрать-файлы-на-дис" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                            <tspan x="40" y="20">Выбрать файлы на диске</tspan>
+                            <tspan x="40" y="22">Выбрать файлы на диске</tspan>
                         </text>
                     </g>
                     <text id="Вы-можете-перетащить" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" fill="#000000">
@@ -799,7 +799,7 @@
                     <use fill="black" fill-opacity="1" filter="url(#filter-88)" xlink:href="#path-87"></use>
                     <use stroke="#929292" mask="url(#mask-89)" stroke-width="2" fill="url(#linearGradient-16)" fill-rule="evenodd" xlink:href="#path-87"></use>
                 </g>
-                <path d="M14.0883469,10.5350189 C13.658485,10.1999265 13.1159938,10 12.5263158,10 C11.1310701,10 10,11.1192881 10,12.5 C10,13.0835356 10.202031,13.6203758 10.5406507,14.04576 C11.3352534,12.5493563 12.5761916,11.3213445 14.0883469,10.5350189 Z M25.4593493,14.04576 C25.797969,13.6203758 26,13.0835356 26,12.5 C26,11.1192881 24.8689299,10 23.4736842,10 C22.8840062,10 22.341515,10.1999265 21.9116531,10.5350189 C23.4238084,11.3213445 24.6647466,12.5493563 25.4593493,14.04576 Z M18,25 C21.9531961,25 25.1578947,21.8286836 25.1578947,17.9166667 C25.1578947,14.0046497 21.9531961,10.8333333 18,10.8333333 C14.0468039,10.8333333 10.8421053,14.0046497 10.8421053,17.9166667 C10.8421053,21.8286836 14.0468039,25 18,25 Z M15.4736842,18.6001841 C15.4736842,18.2226879 15.7834601,17.9166667 16.1374439,17.9166667 L18,17.9166667 L18,14.4194471 C18,14.0497217 18.2929687,13.75 18.6759543,13.75 L18.5872036,13.75 C18.9605228,13.75 19.2631579,14.0567433 19.2631579,14.4141897 L19.2631579,19.1666667 L16.1511662,19.1666667 C15.7770032,19.1666667 15.4736842,18.8640765 15.4736842,18.4831492 L15.4736842,18.6001841 Z" id="Alarm" fill="#030303"></path>
+                <path d="M14.4991124,10.9985756 C14.042944,10.3921625 13.3172692,10 12.5,10 C11.1192881,10 10,11.1192881 10,12.5 C10,13.3172692 10.3921625,14.042944 10.9985756,14.4991124 C11.7922792,13.0140711 13.0140711,11.7922792 14.4991124,10.9985756 Z M25.6104204,13.8407856 C25.8570947,13.4533251 26,12.9933512 26,12.5 C26,11.1192881 24.8807119,10 23.5,10 C22.8444352,10 22.247805,10.2523289 21.8019334,10.6651627 C23.3649911,11.3247061 24.6895789,12.4383392 25.6104204,13.8407856 Z M18,25 C21.8659932,25 25,21.8659932 25,18 C25,14.1340068 21.8659932,11 18,11 C14.1340068,11 11,14.1340068 11,18 C11,21.8659932 14.1340068,25 18,25 Z M15,18.5173509 C15,18.146659 15.3059006,17.8461538 15.6729126,17.8461538 L17.6666667,17.8461538 L17.6666667,14.6699489 C17.6666667,14.2999463 17.9759115,14 18.3333333,14 C18.7015232,14 19,14.2977991 19,14.6743222 L19,19 L15.6785455,19 C15.3037952,19 15,18.6968405 15,18.3288029 L15,18.5173509 Z" id="Alarm" fill="#030303"></path>
             </g>
         </g>
     </g>
