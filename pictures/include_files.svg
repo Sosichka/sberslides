@@ -87,7 +87,7 @@
                                     <use stroke="#929292" mask="url(#mask-11)" stroke-width="2" fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
                                 </g>
                                 <text id="Выбрать-файлы-на-дис" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                                    <tspan x="40" y="20">Выбрать файлы на диске</tspan>
+                                    <tspan x="40" y="22">Выбрать файлы на диске</tspan>
                                 </text>
                             </g>
                             <text id="Вы-можете-перетащить" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" fill="#000000">

@@ -253,8 +253,8 @@
 		<img src="pictures/include_cell.svg" class="cover" alt="Сетка">
 	</section>
 	<section class="slide" id="include_5">
-		<h2 class="top-title">Загрузка фотографий</h2>
-		<img src="pictures/include_uploads.svg" class="cover" alt="Загрузка фотографий">
+		<h2 class="top-title">Просмотр вложений</h2>
+		<img src="pictures/include_uploads.svg" class="cover" alt="Просмотр вложений">
 		<style type="text/css">
 			#include_4 h2 {
 				font-size: 2rem;
@@ -498,9 +498,9 @@
 	<section class="slide" id="dev-problems-11">
 		<pre>
 			<code>export class <mark class="important">Button</mark> extends React.Component&lt;{}, {}&gt; {</code>
-			<code>	<mark>onPost</mark> = e => console.log(e);</code>
+			<code>	<mark>onClick</mark> = e => console.log(e);</code>
 			<code>	render() {</code>
-			<code>		&lt;button onClick={<mark>this.onPost</mark>}&gt;</code>
+			<code>		&lt;button onClick={<mark>this.onClick</mark>}&gt;</code>
 			<code>			Text</code>
 			<code>		&lt;/button&gt;</code>
 			<code>	}</code>
