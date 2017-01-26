@@ -51,10 +51,9 @@
                         <use stroke="#929292" mask="url(#mask-6)" stroke-width="2" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
                     </g>
                     <text id="Попробовать-снова" font-family="PTSans-Bold, PT Sans" font-size="18" font-weight="bold" line-spacing="20" fill="#000000">
-                        <tspan x="39.5" y="21">Попробовать снова</tspan>
+                        <tspan x="39.5" y="23">Попробовать снова</tspan>
                     </text>
                 </g>
-                <rect id="arrow_down/default" fill-opacity="0.200000003" fill="#D0011B" x="20" y="10" width="20" height="20"></rect>
                 <path d="M22.8915962,28.9560193 C21.237944,28.9560194 20.5381966,27.7706186 21.3196307,26.3250674 L28.4758633,13.0869715 C29.2613429,11.6339369 30.5388119,11.6414203 31.3201357,13.0869714 L38.4753581,26.3250667 C39.2607268,27.7781013 38.5540819,28.9560186 36.9031918,28.9560187 L22.8915962,28.9560193 Z M30.8973941,26.9560196 L30.8973941,24.9560196 L28.8973941,24.9560196 L28.8973941,26.9560196 L30.8973941,26.9560196 Z M30.8973941,22.9560196 L30.8973941,16.9560196 L28.8973941,16.9560196 L28.8973941,22.9560196 L30.8973941,22.9560196 Z" id="Combined-Shape" fill="#FFFFFF"></path>
                 <text id="Конcтантин-Константи" font-family="PTSans-Regular, PT Sans" font-size="16" font-weight="normal" line-spacing="18" fill="#FFFFFF">
                     <tspan x="50" y="23">Конcтантин Константинопольский находится в </tspan>
