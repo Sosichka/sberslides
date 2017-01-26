@@ -141,7 +141,7 @@
 		</div>
 		<div class="fact next">
 			<img class="icon" src="pictures/about_lauch.svg" alt="" />
-			<span class="important-number">2018</span> год&nbsp;&mdash; в проме
+			<span class="important-number">2017</span> год&nbsp;&mdash; в проме
 		</div>
 		<style type="text/css">
 			#about .icon {
@@ -305,6 +305,7 @@
 		</style>
 	</section>
 	<section class="slide" id="activex">
+		<h2>Работа с железом</h2>
 		<img src="pictures/activex.jpg" class="centered-picture framework_screen vertical-centered" alt="ActiveX">
 	</section>
 	<section class="slide">
@@ -336,6 +337,7 @@
 		<ul class="items">
 			<li>компонентный подход для построения удобного API</li>
 			<li class="next">читабельность кода, его дальнейшее переиспользование</li>
+			<li class="next">поддержка IE8</li>
 			<li class="next"><mark class="important-number">+ бонус</mark>&nbsp;&mdash; разработка мобильного приложения на&nbsp;React&nbsp;Native</li>
 		</ul>
 	</section>
@@ -402,7 +404,7 @@
 				<code>export interface State {</code>
 				<code class="mark next">	value: string</code>
 				<code>}</code>
-				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;{}, State&gt; {</code>
 				<code>	onChange = value => this.setState({ value })</code>
 				<code>	render() {</code>
 				<code class="mark next">		&lt;input value={this.state.value}
@@ -418,7 +420,7 @@
 				<code>export interface State {</code>
 				<code>	value: string</code>
 				<code>}</code>
-				<code>export class <mark class="important">Input</mark> extends React.Component&lt;Props, State&gt; {</code>
+				<code>export class <mark class="important">Input</mark> extends React.Component&lt;{}, State&gt; {</code>
 				<code class="mark">	onChange = value => this.setState({ value })</code>
 				<code>	render() {</code>
 					<code>		&lt;input value={this.state.value}
@@ -434,7 +436,7 @@
 				<code class="mark next">export interface FormState {</code>
 				<code>	value: string</code>
 				<code>}</code>
-				<code>export class <mark class="important">Form</mark> extends React.Component&lt;Props, FormState&gt; {</code>
+				<code>export class <mark class="important">Form</mark> extends React.Component&lt;{}, FormState&gt; {</code>
 						<code>	changeInput = value => this.setState({ value })</code>
 
 						<code>	render() {</code>
@@ -552,7 +554,7 @@
 			<li><a href="https://github.com/postcss/postcss-nested">nested</a></li>
 			<li><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></li>
 			<li><a href="https://github.com/postcss/postcss-import">import</a></li>
-			<li><a href="https://github.com/postcss/postcss-simple-vars">simpleVars</a></li>
+			<li><a href="https://github.com/postcss/postcss-simple-vars">simple-vars</a></li>
 		</ol>
 		<img src="pictures/cssmodules-dragon.png" alt="CSS Modules">
 		<style>
@@ -682,7 +684,7 @@
 		</div>
 		<div class="step next">
 			<div class="step-pic"><img class="typedoc" src="pictures/gulp-typedoc.png" alt=""></div>
-			<div>gulp-typedoc</div>
+			<div>typedoc</div>
 		</div>
 		<div class="step next">
 			<div class="step-pic"><img src="pictures/json.svg" alt=""></div>
@@ -825,7 +827,7 @@
 		<ul class="items">
 			<li>библиотека поставляется в виде npm-пакета</li>
 			<li class="next">4 версии библиотеки</li>
-			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sinopia</li>
+			<li class="next">сервер локальных npm-пакетов&nbsp;&mdash; Sonatype&nbsp;Nexus</li>
 		</ul>
 	</section>
 	<section class="slide white">
@@ -895,9 +897,17 @@
 	<section class="slide" id="team4">
 		<h2>Требования к кандидату</h2>
 		<ul class="items">
-			<li>высшее профильное образование</li>
-			<li class="next">знание JavaScript и CSS</li>
+			<li>знание JavaScript и CSS</li>
 		</ul>
+		<img src="pictures/hugh.gif" class="hugh" alt="Hugh">
+		<style>
+			#team4 .hugh {
+				position: absolute;
+				right: 3rem;
+				bottom: 3rem;
+				width: 50%;
+			}
+		</style>
 	</section>
 	<section class="slide white">
 		<h2 class="centered-picture vertical-centered cover-title">Что дальше?</h2>
